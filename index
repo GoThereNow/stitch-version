@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Digital Curator | Export Your Site</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-low": "#f5f3f0",
+                        "on-secondary-container": "#78351e",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#aecbd8",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f2f0ed",
+                        "surface-bright": "#fbf9f6",
+                        "error-container": "#ffdad6",
+                        "primary": "#00525f",
+                        "on-tertiary-fixed": "#001f29",
+                        "error": "#ba1a1a",
+                        "surface": "#fbf9f6",
+                        "on-surface": "#1b1c1a",
+                        "on-tertiary-fixed-variant": "#2f4a55",
+                        "on-primary-fixed": "#001f25",
+                        "inverse-surface": "#30312f",
+                        "on-background": "#1b1c1a",
+                        "on-surface-variant": "#3f484b",
+                        "on-secondary-fixed-variant": "#75331c",
+                        "surface-variant": "#e4e2df",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#390c00",
+                        "secondary": "#934a31",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#bfc8cb",
+                        "on-primary-container": "#a2e9fa",
+                        "surface-dim": "#dbdad7",
+                        "surface-container-highest": "#e4e2df",
+                        "surface-container-high": "#eae8e5",
+                        "secondary-fixed-dim": "#ffb59d",
+                        "surface-container": "#efeeeb",
+                        "primary-container": "#1a6b7a",
+                        "primary-fixed": "#a7eeff",
+                        "on-tertiary-container": "#c6e3f0",
+                        "outline": "#6f797b",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#8bd1e2",
+                        "tertiary": "#334e59",
+                        "tertiary-container": "#4b6671",
+                        "secondary-container": "#fea182",
+                        "inverse-primary": "#8bd1e2",
+                        "tertiary-fixed": "#cae7f4",
+                        "background": "#fbf9f6",
+                        "surface-tint": "#146776",
+                        "secondary-fixed": "#ffdbd0",
+                        "on-primary-fixed-variant": "#004e5b"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(251, 249, 246, 0.9);
+            backdrop-filter: blur(12px);
+        }
+        .editorial-shadow {
+            box-shadow: 0 24px 48px -12px rgba(0, 82, 95, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-header">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-[1920px] mx-auto">
+<div class="font-headline italic text-2xl tracking-tight text-primary">The Digital Curator</div>
+<nav class="hidden md:flex items-center gap-x-8">
+<a class="text-stone-500 hover:text-primary transition-colors" href="#">Showcase</a>
+<a class="text-stone-500 hover:text-primary transition-colors" href="#">UI Library</a>
+<a class="text-stone-500 hover:text-primary transition-colors" href="#">Patterns</a>
+<a class="text-stone-500 hover:text-primary transition-colors" href="#">Guidelines</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-2 rounded-full font-medium transition-transform active:scale-95 shadow-sm">
+                    Export All
+                </button>
+</div>
+</div>
+<div class="bg-surface-container-high h-px w-full"></div>
+</header>
+<div class="flex flex-1 pt-24">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex h-[calc(100vh-88px)] w-72 flex-col pt-12 pb-12 gap-y-2 sticky top-24">
+<div class="px-8 mb-6">
+<h3 class="font-headline text-lg text-on-surface">Gallery Sections</h3>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mt-1">Editorial Screens</p>
+</div>
+<nav class="flex flex-col gap-y-1">
+<a class="text-stone-500 py-3 px-8 hover:translate-x-1 transition-transform flex items-center gap-3" href="#">
+<span class="material-symbols-outlined text-xl">home</span>
+<span class="text-sm tracking-wide">Home Screen</span>
+</a>
+<a class="text-stone-500 py-3 px-8 hover:translate-x-1 transition-transform flex items-center gap-3" href="#">
+<span class="material-symbols-outlined text-xl">map</span>
+<span class="text-sm tracking-wide">Map View</span>
+</a>
+<a class="text-stone-500 py-3 px-8 hover:translate-x-1 transition-transform flex items-center gap-3" href="#">
+<span class="material-symbols-outlined text-xl">hotel</span>
+<span class="text-sm tracking-wide">Property Details</span>
+</a>
+<a class="text-stone-500 py-3 px-8 hover:translate-x-1 transition-transform flex items-center gap-3" href="#">
+<span class="material-symbols-outlined text-xl">person_pin</span>
+<span class="text-sm tracking-wide">Creator Profile</span>
+</a>
+<a class="text-stone-500 py-3 px-8 hover:translate-x-1 transition-transform flex items-center gap-3" href="#">
+<span class="material-symbols-outlined text-xl">payments</span>
+<span class="text-sm tracking-wide">Booking Flow</span>
+</a>
+</nav>
+<div class="mt-auto px-8">
+<button class="w-full bg-surface-container-lowest border border-outline-variant/20 py-3 rounded-full text-secondary font-medium flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">add</span>
+                    New Snapshot
+                </button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 px-6 md:px-12 py-12 max-w-6xl">
+<!-- Header Section -->
+<section class="mb-16">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-secondary font-semibold mb-4 block">Finalize Design</span>
+<h1 class="font-headline text-5xl md:text-6xl text-on-surface mb-6 tracking-tight">Export Your Site</h1>
+<p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
+                    Review your curated editorial screens before final production. Click the <span class="text-primary font-semibold italic">Copy HTML/CSS</span> button on any thumbnail to instantly grab the production-ready code for that specific component.
+                </p>
+</section>
+<!-- Gallery Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-24">
+<!-- Home Screen Card -->
+<div class="md:col-span-12 lg:col-span-8 group">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:translate-y-[-4px] editorial-shadow">
+<div class="aspect-[16/9] w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxurious travel magazine style home page hero showing a serene mountain lake at dawn with elegant serif typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPfeySy5pTdN1T9OYGYH9DIbo2G14bVEz_m3FGWVjbmiRohR3H4X5wX-5mmUEpQqz0PSCTpoc1-SQvLwkYH72nJ5VcMlwjLWMdNc4vupV3WAgdBjMm52RRIyFJWIENxQ8A9QMRTcxHvpwf5zOmJ5IeYWb_ApEjcgRExX0kYW5B2ZnCg3Ov6AtuyKz4v7bo6ho4zN58eQcxssYwENRZe_qJiUoTUI-MeDFpxMolvHEubWQuOkSKX1s1rUIZiARZmLK_MU0FjMYPLr9l"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="p-8 flex justify-between items-center bg-surface-container-lowest">
+<div>
+<h4 class="font-headline text-2xl text-on-surface">Home Screen</h4>
+<p class="text-on-surface-variant text-sm mt-1 font-medium">Editorial Hero &amp; Featured Curations</p>
+</div>
+<div class="absolute bottom-full mb-4 right-0 transform translate-x-1/4 z-20 w-64">
+<div class="bg-secondary text-white text-xs p-3 rounded-lg shadow-xl relative animate-bounce">
+<p class="font-medium leading-snug">Click the <span class="font-bold">&lt;/&gt; View Code</span> button in the top toolbar to access this screen's code</p>
+<div class="absolute top-full right-1/4 w-3 h-3 bg-secondary rotate-45 -mt-1.5"></div>
+</div>
+</div><button class="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-medium active:scale-95 transition-all hover:shadow-lg hover:-translate-y-0.5 duration-200">
+<span class="material-symbols-outlined text-lg">content_copy</span>
+                                Copy HTML/CSS
+                            </button>
+</div>
+</div>
+</div>
+<!-- Interactive Map Card -->
+<div class="md:col-span-6 lg:col-span-4 group">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:translate-y-[-4px] editorial-shadow h-full flex flex-col">
+<div class="flex-1 overflow-hidden min-h-[300px]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist artistic map interface with custom teal markers and soft cream parchment texture background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEQOud4uw4m18Gf56bs2QKQEIiBmQuYn--LWPbfl8lLVZMhnWUcuvIIb6878r3Cc9wirFqw6Oo1N9pMKJFD78PqoL-LxQ7ZaKBOvM9DATMYgTF-qhcFAzOYU_tTycNAFifgoeL15IEAaUh6EDljrODofUhO7StWcZXUs8v_MUj1IZGOYO9b8x2_Awwg2018VIeLqWqulZGmVP_y7o1jCuVyH1WAPSa6bWy3KIZnwZ8XQLuY5_d0F1QaB7rPu6vastsyhWi1mzoBoAv"/>
+</div>
+<div class="p-8 bg-surface-container-lowest border-t border-surface-container">
+<h4 class="font-headline text-xl text-on-surface mb-4">Interactive Map</h4>
+<button class="w-full flex items-center justify-center gap-2 border border-primary text-primary px-4 py-3 rounded-full font-medium hover:bg-primary/5 transition-colors hover:shadow-lg hover:-translate-y-0.5 duration-200">
+<span class="material-symbols-outlined text-lg">code</span>
+                                Copy HTML/CSS
+                            </button>
+</div>
+</div>
+</div>
+<!-- Hotel Detail Card -->
+<div class="md:col-span-6 lg:col-span-5 group">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:translate-y-[-4px] editorial-shadow h-full flex flex-col">
+<div class="flex-1 overflow-hidden min-h-[300px]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-end boutique hotel room with large windows overlooking a Mediterranean coast with warm sunlight casting shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBybevDy5e2TyOkpKQh29FdqBmVq1T1VvhgD3kBRPt3k1zTcm1fonyNrbf0BkENKrUzPUX08jl4fGj6aG-F4zcggMIAqO8u1R2YL4NUFtzy5RGCBG6xJud5oyn4omPVmdqNQ16VsXB_6loPAUMnmZEyJgw6ZRZO5aMvwaeqh0kjlermQ1D6H5sWVksxj5BiL13RXY8HQ82_i5nNpUaJyiZyT0GylKSneoVL-X_YU2S0bU0GvVMSGc2fo8lgP7mCtkJYLtPDVR4oXk9L"/>
+</div>
+<div class="p-8 bg-surface-container-lowest border-t border-surface-container">
+<h4 class="font-headline text-xl text-on-surface mb-4">Hotel Detail Page</h4>
+<button class="w-full flex items-center justify-center gap-2 border border-primary text-primary px-4 py-3 rounded-full font-medium hover:bg-primary/5 transition-colors hover:shadow-lg hover:-translate-y-0.5 duration-200">
+<span class="material-symbols-outlined text-lg">terminal</span>
+                                Copy HTML/CSS
+                            </button>
+</div>
+</div>
+</div>
+<!-- Instructional / Stats Panel -->
+<div class="md:col-span-12 lg:col-span-7 bg-primary text-white p-10 rounded-xl flex flex-col justify-center relative overflow-hidden">
+<!-- Decor -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/30 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="relative z-10">
+<h3 class="font-headline text-3xl mb-4 italic">Ready for production?</h3>
+<p class="text-on-primary-container text-lg mb-8 leading-relaxed max-w-md">
+                            Your assets are optimized for high-performance delivery. All images use lazy-loading and typography is served via CDN for maximum speed.
+                        </p>
+<div class="grid grid-cols-3 gap-6">
+<div>
+<div class="text-3xl font-headline italic">1.2s</div>
+<div class="text-[10px] uppercase tracking-widest text-primary-fixed opacity-70 mt-1">LCP Load Time</div>
+</div>
+<div>
+<div class="text-3xl font-headline italic">98%</div>
+<div class="text-[10px] uppercase tracking-widest text-primary-fixed opacity-70 mt-1">Perf Score</div>
+</div>
+<div>
+<div class="text-3xl font-headline italic">34kb</div>
+<div class="text-[10px] uppercase tracking-widest text-primary-fixed opacity-70 mt-1">CSS Bundle</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Go-Live Progress Bar -->
+<section class="max-w-4xl mx-auto mb-12">
+<div class="flex justify-between items-end mb-6">
+<div>
+<h5 class="font-label text-xs uppercase tracking-widest text-secondary font-bold mb-1">Current Status</h5>
+<p class="font-headline text-2xl text-on-surface">Exporting Assets</p>
+</div>
+<span class="text-primary font-bold text-sm">Step 3 of 4</span>
+</div>
+<div class="relative h-4 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full w-[75%] bg-gradient-to-r from-primary to-secondary transition-all duration-1000"></div>
+</div>
+<div class="grid grid-cols-4 mt-4 text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">
+<div class="text-primary">Curate</div>
+<div class="text-primary">Design</div>
+<div class="text-secondary">Exporting</div>
+<div class="text-right">Deploy</div>
+</div>
+</section>
+</main>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-container-high w-full py-16 px-12 mt-auto border-t border-stone-200">
+<div class="flex flex-col md:flex-row justify-between items-end w-full max-w-[1920px] mx-auto gap-8">
+<div class="flex flex-col gap-4">
+<div class="font-headline italic text-xl text-stone-800">The Digital Curator</div>
+<div class="font-body text-xs uppercase tracking-[0.1em] text-stone-600">
+                    © 2024 The Digital Curator Editorial System
+                </div>
+</div>
+<div class="flex gap-x-8">
+<a class="font-body text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-secondary transition-colors" href="#">Licensing</a>
+<a class="font-body text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-secondary transition-colors" href="#">Version History</a>
+<a class="font-body text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-secondary transition-colors" href="#">System Status</a>
+<a class="font-body text-xs uppercase tracking-[0.1em] text-stone-500 hover:text-secondary transition-colors" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+</body></html>
