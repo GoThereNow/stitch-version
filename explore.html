@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
             colors: {
-              "primary-container": "#1a6b7a",
-              "surface": "#fbf9f6",
-              "on-secondary-fixed": "#390c00",
-              "surface-bright": "#fbf9f6",
-              "on-primary": "#ffffff",
-              "tertiary-container": "#4b6671",
-              "on-primary-container": "#a2e9fa",
-              "on-tertiary": "#ffffff",
-              "on-background": "#1b1c1a",
-              "primary-fixed": "#a7eeff",
-              "inverse-surface": "#30312f",
-              "tertiary": "#334e59",
-              "primary": "#00525f",
-              "on-secondary-container": "#78351e",
-              "tertiary-fixed": "#cae7f4",
-              "secondary-fixed": "#ffdbd0",
-              "surface-container": "#efeeeb",
-              "surface-container-low": "#f5f3f0",
-              "surface-container-highest": "#e4e2df",
-              "on-error-container": "#93000a",
-              "outline": "#6f797b",
-              "on-tertiary-fixed": "#001f29",
-              "secondary": "#934a31",
-              "on-secondary": "#ffffff",
-              "on-tertiary-container": "#c6e3f0",
-              "primary-fixed-dim": "#8bd1e2",
-              "on-surface-variant": "#3f484b",
-              "surface-tint": "#146776",
-              "background": "#fbf9f6",
-              "surface-variant": "#e4e2df",
-              "on-surface": "#1b1c1a",
-              "outline-variant": "#bfc8cb",
-              "error": "#ba1a1a",
               "on-error": "#ffffff",
-              "inverse-on-surface": "#f2f0ed",
-              "on-tertiary-fixed-variant": "#2f4a55",
-              "on-primary-fixed-variant": "#004e5b",
-              "on-secondary-fixed-variant": "#75331c",
-              "inverse-primary": "#8bd1e2",
-              "error-container": "#ffdad6",
-              "on-primary-fixed": "#001f25",
-              "secondary-container": "#fea182",
-              "surface-dim": "#dbdad7",
+              "on-surface": "#1b1c1a",
               "secondary-fixed-dim": "#ffb59d",
-              "tertiary-fixed-dim": "#aecbd8",
+              "surface-container-highest": "#e4e2df",
+              "primary-fixed-dim": "#8bd1e2",
+              "outline-variant": "#bfc8cb",
+              "on-surface-variant": "#3f484b",
+              "on-primary-fixed-variant": "#004e5b",
+              "primary-container": "#1a6b7a",
+              "surface-tint": "#146776",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#a2e9fa",
+              "inverse-surface": "#30312f",
+              "surface-container": "#efeeeb",
+              "tertiary-container": "#4b6671",
+              "tertiary": "#334e59",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f5f3f0",
+              "on-tertiary-fixed-variant": "#2f4a55",
+              "background": "#fbf9f6",
+              "on-primary-fixed": "#001f25",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "inverse-on-surface": "#f2f0ed",
+              "secondary-fixed": "#ffdbd0",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed-variant": "#75331c",
+              "secondary-container": "#fea182",
+              "tertiary-fixed": "#cae7f4",
+              "surface": "#fbf9f6",
+              "inverse-primary": "#8bd1e2",
               "surface-container-high": "#eae8e5",
-              "surface-container-lowest": "#ffffff"
+              "primary-fixed": "#a7eeff",
+              "on-tertiary-container": "#c6e3f0",
+              "secondary": "#934a31",
+              "on-secondary-container": "#78351e",
+              "on-background": "#1b1c1a",
+              "surface-bright": "#fbf9f6",
+              "error-container": "#ffdad6",
+              "surface-dim": "#dbdad7",
+              "surface-variant": "#e4e2df",
+              "on-secondary-fixed": "#390c00",
+              "error": "#ba1a1a",
+              "tertiary-fixed-dim": "#aecbd8",
+              "on-tertiary-fixed": "#001f29",
+              "primary": "#00525f",
+              "outline": "#6f797b"
             },
             fontFamily: {
-              "headline": ["Noto Serif"],
-              "body": ["Plus Jakarta Sans"],
-              "label": ["Plus Jakarta Sans"]
+              "headline": ["Noto Serif", "serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
             },
             borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
           },
@@ -74,176 +74,230 @@
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
         }
-        .editorial-shadow {
-            shadow-[0_4px_24px_rgba(0,82,95,0.04)];
-        }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #bfc8cb; border-radius: 10px; }
+        .map-container { background-image: radial-gradient(#e4e2df 1px, transparent 1px); background-size: 20px 20px; }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="bg-surface text-on-surface font-body selection:bg-secondary-container">
-<!-- TopAppBar -->
-<header class="bg-[#fbf9f6] dark:bg-stone-950 flex justify-between items-center w-full px-6 py-4 docked full-width top-0 z-50 sticky">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-[#00525f] dark:text-[#1a6b7a] cursor-pointer hover:opacity-80 transition-opacity" data-icon="menu">menu</span>
-<h1 class="font-serif text-2xl italic tracking-tighter text-[#00525f] dark:text-[#1a6b7a]">GoThereNow</h1>
+</head>
+<body class="bg-background text-on-background font-body antialiased overflow-hidden h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 backdrop-blur-md dark:bg-slate-900/80 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto w-full">
+<div class="text-2xl font-headline italic font-bold text-[#00525f] dark:text-teal-200">GoThereNow</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#00525f] hover:opacity-70 transition-all duration-300" href="#">Home</a>
+<a class="text-[#00525f] dark:text-teal-400 font-bold border-b-2 border-[#934a31] pb-1 hover:opacity-70 transition-all duration-300" href="#">Explore</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#00525f] hover:opacity-70 transition-all duration-300" href="#">Creators</a>
 </div>
-<div class="hidden md:flex items-center gap-8">
-<nav class="flex gap-6 items-center">
-<a class="text-stone-500 dark:text-stone-400 font-sans uppercase tracking-widest text-[10px] hover:opacity-80 transition-opacity" href="#">Home</a>
-<a class="text-[#00525f] dark:text-[#1a6b7a] font-semibold font-sans uppercase tracking-widest text-[10px]" href="#">Search</a>
-<a class="text-stone-500 dark:text-stone-400 font-sans uppercase tracking-widest text-[10px] hover:opacity-80 transition-opacity" href="#">Map</a>
-<a class="text-stone-500 dark:text-stone-400 font-sans uppercase merchant tracking-widest text-[10px] hover:opacity-80 transition-opacity" href="#">Profile</a>
+<button class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-semibold hover:opacity-90 active:scale-95 transform transition-all shadow-md">
+                Sign In
+            </button>
+</div>
 </nav>
+<!-- Main Content Area: Split View -->
+<main class="flex-1 flex pt-24 overflow-hidden">
+<!-- Left Sidebar: Scrollable List -->
+<aside class="w-full md:w-[480px] h-full flex flex-col bg-surface overflow-hidden z-10">
+<div class="px-8 py-6 bg-surface-container-low">
+<div class="flex items-center justify-between mb-4">
+<h1 class="text-2xl font-headline font-bold text-primary">Hidden Gems in Provence</h1>
+<span class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-label uppercase tracking-widest text-on-surface-variant">24 Results</span>
 </div>
-<span class="material-symbols-outlined text-[#00525f] dark:text-[#1a6b7a] cursor-pointer hover:opacity-80 transition-opacity" data-icon="notifications">notifications</span>
-</header>
-<main class="max-w-7xl mx-auto px-6 pt-8 pb-32">
-<!-- Search Section -->
-<section class="mb-12">
-<div class="relative max-w-2xl">
-<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
-<input class="w-full pl-12 pr-6 py-4 rounded-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface placeholder:text-outline/60" placeholder="Search destinations, creators, or hidden gems..." type="text"/>
+<!-- Filters Placeholder -->
+<div class="flex gap-2 overflow-x-auto pb-2 custom-scrollbar">
+<button class="bg-primary text-on-primary rounded-full px-4 py-1.5 text-sm font-medium whitespace-nowrap">Price Range</button>
+<button class="bg-surface-container-lowest border border-outline-variant/20 text-on-surface-variant rounded-full px-4 py-1.5 text-sm font-medium whitespace-nowrap">Boutique Stays</button>
+<button class="bg-surface-container-lowest border border-outline-variant/20 text-on-surface-variant rounded-full px-4 py-1.5 text-sm font-medium whitespace-nowrap">Creators' Choice</button>
 </div>
-</section>
-<!-- Category Filters -->
-<section class="mb-16 overflow-x-auto no-scrollbar">
-<div class="flex gap-3 pb-2">
-<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label text-sm whitespace-nowrap active:scale-95 transition-transform">All Stories</button>
-<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95">Boutique</button>
-<button class="px-6 py-2 rounded-full bg-secondary text-on-secondary font-label text-sm whitespace-nowrap active:scale-95 transition-transform shadow-lg shadow-secondary/20">Luxury</button>
-<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95">Beach</button>
-<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95">City</button>
-<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95">Nordic</button>
-<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95">Desert</button>
 </div>
-</section>
-<!-- Featured Editorial Section (Asymmetric) -->
-<section class="mb-20">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-<div class="md:col-span-7 group relative overflow-hidden rounded-xl aspect-[4/5] md:aspect-[16/10]">
-<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="dramatic wide shot of the amalfi coast cliffside village at twilight with sparkling lights reflecting in the mediterranean sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWuEe_mO7uIgioxr4ezrj-YEtD_r3goFnKn0u9pvij9Tq3DdXpRUbDsXF4CdvVw8hegGo0c79Puf2avGYNNLZk0NOoc6L_z4lQDwdqRPz9h9dRD9ks3RwOIJrRh_rnrujhcOJNYuiHy__yzVGMfZETfzGrWXB6Y2SqmoLIW_Plqzx03ycJ8bX2aH75a6ZHr1fOHued9EVP1qT6k_sv62I53xbe--HhwIpVYI1ZRWHhAZAZMoTAgp5EQSQqcFBtWMdf7oqoQPFzzhYd"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
-<div class="absolute bottom-8 left-8 right-8">
-<span class="font-label text-white/80 uppercase tracking-widest text-[10px] mb-2 block">Featured Destination</span>
-<h2 class="font-headline text-4xl text-white italic mb-4 leading-tight">Postcards from the <br/>Amalfi Coast</h2>
-<button class="flex items-center gap-2 text-white font-label text-xs uppercase tracking-widest hover:gap-4 transition-all group/btn">
-                            Read the Story 
-                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+<div class="flex-1 overflow-y-auto custom-scrollbar px-8 py-4 space-y-8">
+<!-- Hotel Card 1 -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/5">
+<div class="relative h-64 w-full">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="a rustic boutique villa in provence with stone walls climbing vines and sun-drenched outdoor patio overlooking olive groves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfn35MYQNSXFdgtligAaIfXlvX11oDFQ14d0DKjLQ5f84SKVLxyz8wAzZshbAs7icoh0ZrIcd8DkbgvA4NU7LR2eh_0MfK66JmzIVUZn-HzRvrCvfcUwoMThTRHAaxEPtms1BPPKhCwvgk8ew9guDNoyghSHfb0L2L1VLNLIrvK5v16HYBn2KzSbvCZLAPDiBkwglgt7HRY77T4yXJXgIox1nJh6Nu1tlfwzcT3Rv4AJtVJBuRUDkeMSZzGUDdVWnt1M3Q9ifkHJFU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<h2 class="text-xl font-headline font-bold leading-tight">La Bastide de Gordes</h2>
+<p class="text-sm opacity-90 font-body">Gordes, France</p>
+</div>
+</div>
+<div class="p-5 space-y-4">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex-shrink-0 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a female travel creator with a stylish wide-brimmed hat smiling in outdoor light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl0ujntOCa7RX-f-J4koe4SDzVpyjcU6qqs2GGQhEXT6bQ9rkUcT2yEZJwl9N_0xF3ZHDVdXApLp-0giJxCoO3gPiMsDIh4grPrdqsxr1h_GA9jrMrAtMvzYHJUyYSK3FkUyYXcn3rj3jLVvPtIDJcwTf9oLIdHH_nu2HWYieuCAFw5KD42LuCBRgnnYHSoJ4fjk9K76NeYstPox-8kwnSI3hC-6gJuzvQAeb0wNitkrVKwizvmjWVBWijP5r-nJVt486Y4lm0-GCF"/>
+</div>
+<blockquote class="italic text-on-surface-variant text-sm border-l-2 border-secondary/30 pl-3 leading-relaxed">
+                                "The morning light hitting the stone terraces is unlike anything else. Truly a masterclass in slow luxury."
+                            </blockquote>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="text-xs font-label uppercase tracking-widest text-secondary font-bold">Starting from</span>
+<span class="text-2xl font-bold text-on-surface">€840 <span class="text-sm font-normal text-on-surface-variant">/ night</span></span>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2.5 rounded-full font-bold text-sm shadow-md active:scale-95 transition-all">
+                                Book on Booking.com
+                            </button>
+</div>
+</div>
+</article>
+<!-- Hotel Card 2 -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/5">
+<div class="relative h-64 w-full">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="luxurious minimal hotel room with large windows overlooking a lavender field at sunset warm evening glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0YWCKMQd24zMo6W4VcMgAK12TSFj4bu7U73kCezINFidqa4L5DLMLnabqk3DeHmaLJ51ba3nEl3xDifOW74DS4phIpglemq2n93wXmKF3pLrxb8UcUtx6iFCc05jwZ6KazONcboSgSEt1FeGW5uA0vINLAbBpghmQiBgYlNIRZmD5B9pyULTMxN1Vqs7JHw30MxSWJBskjM_i_UIH_dzcDAbAD0Ahsk4APNLSdvUSUvqAFIhPlPPC6VnNNI2pVqbFeYo5FmdzJEmU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<h2 class="text-xl font-headline font-bold leading-tight">Villa La Coste</h2>
+<p class="text-sm opacity-90 font-body">Le Puy-Sainte-Réparade</p>
+</div>
+</div>
+<div class="p-5 space-y-4">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex-shrink-0 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="travel photographer portrait with a camera in hand and natural outdoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuoIxsTP7ixK-v3q7-aCs0scvrC3v5xMRRamV3OI6Eq_Sp8eG4cQxJnl_7v2qnV0vj0z1PaN3oxICkgW86YoiYnYtky0zFfu_CzB-ItP9gZpbZQUx_vsvwqYwFmpDpJJlv0uH0UCu29VXBMDktHv8QwEd-XN0bzKPH0bhC4qwKcKgd2jr7J7moIIheLplpIYq89Xdd0keDMfm1GhkUW84RwAhY9yhpQJjirGgBNqpo5Us0T4l4Bk_sZ2v2ysrdEl6_ZFF3s2VWQDQ7"/>
+</div>
+<blockquote class="italic text-on-surface-variant text-sm border-l-2 border-secondary/30 pl-3 leading-relaxed">
+                                "Art meets nature here. Don't skip the walk through the vineyards at golden hour."
+                            </blockquote>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="text-xs font-label uppercase tracking-widest text-secondary font-bold">Starting from</span>
+<span class="text-2xl font-bold text-on-surface">€620 <span class="text-sm font-normal text-on-surface-variant">/ night</span></span>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2.5 rounded-full font-bold text-sm shadow-md active:scale-95 transition-all">
+                                Book on Booking.com
+                            </button>
+</div>
+</div>
+</article>
+<!-- Hotel Card 3 -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/5">
+<div class="relative h-64 w-full">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="french chateau style hotel with turquoise shutters and classical architecture in a manicured garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfOCGy2IURMkA_a8fcFSwa9toxz4HUAvvSxhvgKeSeyUIuGVii1RTancvdVb4ZVqbjN0rZS52KpOvXpoVPewa3O1cBQxOB_O0Et_CroOBrCXEfDj28kA027y2dKHvkVXxilunSID83S83p6cY3ND2v_0FR_zeSAjT8JWJyYc-9tE0AlnspO_VVqYJUlgA5lwNkWjJSxpouVSuspNUkIpHSDdOkx4rMLGcfFvq_Ha734JJetrBlPO7iAzjf0gfnNQ7tOtiGRk2eOH7Z"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<h2 class="text-xl font-headline font-bold leading-tight">Château de Fonscolombe</h2>
+<p class="text-sm opacity-90 font-body">Le Puy-Sainte-Réparade</p>
+</div>
+</div>
+<div class="p-5 space-y-4">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex-shrink-0 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="stylish traveler woman with dark hair against a minimalist studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwo8AqKA9VQPOj-_LteL8K85nZehGYLY35IBGCCUDGiEZIaQvMZw8b4BkFMi4heFTa0yvZuCDZrjdCKmtfH-ep98YHasDAW8rYyPtAFtECUU_5eU3prTt6YSfJq6Zldvrnolqk4VI_fxRPd99ppDd15eJp4CSqvTh4odYBL819FMNlYEAAauIqEgXAiIV2S91uforNNZmFOmArYTHh94lYPTYkJZ2sTp6MvRpgwYzDCu1vpWko8QIJJn72xsS-0XUK-aFCpj2lrzQg"/>
+</div>
+<blockquote class="italic text-on-surface-variant text-sm border-l-2 border-secondary/30 pl-3 leading-relaxed">
+                                "History breathed back to life. The breakfast in the park is worth the trip alone."
+                            </blockquote>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="text-xs font-label uppercase tracking-widest text-secondary font-bold">Starting from</span>
+<span class="text-2xl font-bold text-on-surface">€415 <span class="text-sm font-normal text-on-surface-variant">/ night</span></span>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2.5 rounded-full font-bold text-sm shadow-md active:scale-95 transition-all">
+                                Book on Booking.com
+                            </button>
+</div>
+</div>
+</article>
+</div>
+</aside>
+<!-- Right: Interactive Map Area -->
+<section class="flex-1 relative bg-surface-container-high overflow-hidden map-container">
+<!-- Simulated Map Visual -->
+<div class="absolute inset-0 w-full h-full">
+<!-- Background Image of Map -->
+<img class="w-full h-full object-cover opacity-50 contrast-75 saturate-50" data-alt="detailed topographic map style aerial of southern france countryside with soft earthy tones and subtle grid lines" data-location="Provence, France" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGQc1GzcTv5GgjW8KHBeItU0VnYPJYMviRSUMaAwRYthYlvhj_2J8N_V2aksfij3HlDwSUy6FaiFeBPVQP5qraAj3fAWZMhHmq9OH8_RENCmrLCI0Do_Nz90nE64ezqUk_HW3fvj15_Nnbp8wJJnSqXDy-pIW02f860Jb1_daZodJFxA-MSUK4cbRV_DZMd4143URVA94nTt1hc8OpmJ2nB7dxmAG35m7KmZKelxiuXJFp8y3T6vDLctAxkoXDtybSo8m97Y4fec38"/>
+<!-- Price Pins -->
+<!-- Pin 1 -->
+<div class="absolute top-[35%] left-[45%]">
+<div class="relative group cursor-pointer">
+<div class="bg-primary text-on-primary px-3 py-1.5 rounded-full font-bold shadow-lg flex items-center gap-1 group-hover:scale-110 group-hover:bg-secondary transition-all">
+<span class="text-xs">€</span>840
+                        </div>
+<div class="w-3 h-3 bg-primary rotate-45 absolute -bottom-1 left-1/2 -translate-x-1/2 group-hover:bg-secondary transition-colors"></div>
+</div>
+</div>
+<!-- Pin 2 (Selected/Hovered) -->
+<div class="absolute top-[55%] left-[65%] z-20">
+<div class="relative group cursor-pointer">
+<div class="bg-secondary text-on-primary px-4 py-2 rounded-full font-extrabold shadow-xl flex items-center gap-1 scale-110 border-2 border-surface-container-lowest">
+<span class="text-xs">€</span>620
+                        </div>
+<div class="w-4 h-4 bg-secondary rotate-45 absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-r-2 border-b-2 border-surface-container-lowest"></div>
+<!-- Tooltip/Preview on Map -->
+<div class="absolute bottom-16 left-1/2 -translate-x-1/2 w-48 bg-surface-container-lowest p-3 rounded-lg shadow-2xl invisible group-hover:visible transition-all">
+<img class="w-full h-24 object-cover rounded-md mb-2" data-alt="small thumbnail of a modern luxury hotel room overlooking vineyards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWDcC4i5iS7AC66TLQgi3HxZvPcrFyDmgHF-R7FjfEFZsu2HaicLt2jfkXryDipaGoXlX_yYiMybjHkrukMhByG7X_MvBDIKGYZB7YMr0X30mzj5nCdCLO5OJ1Fr_6Y1PHbsZ-KYmGmS-02_ffavs2Rthi5Qn-RBAY9J6L4Xxha2kJ1SNW0BBo2Ib6zRKl6ovX6B5Jk1D_f47Ad6FLcp0peeNoq6ZG6eneCr-psFLkV4EyfQ6IdlV_ri5f42n7QiMGdqEtMxqUuRE2"/>
+<h4 class="text-sm font-headline font-bold text-on-surface leading-none mb-1">Villa La Coste</h4>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[10px] font-bold">4.9 Creator Rating</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pin 3 -->
+<div class="absolute top-[25%] left-[20%]">
+<div class="relative group cursor-pointer">
+<div class="bg-primary text-on-primary px-3 py-1.5 rounded-full font-bold shadow-lg flex items-center gap-1 hover:scale-110 hover:bg-secondary transition-all">
+<span class="text-xs">€</span>415
+                        </div>
+<div class="w-3 h-3 bg-primary rotate-45 absolute -bottom-1 left-1/2 -translate-x-1/2 group-hover:bg-secondary transition-colors"></div>
+</div>
+</div>
+<!-- Densely Populated smaller pins -->
+<div class="absolute top-[70%] left-[30%] opacity-70">
+<div class="bg-primary-container text-on-primary-container px-2 py-1 rounded-full text-[10px] font-bold shadow-sm">€210</div>
+</div>
+<div class="absolute top-[15%] left-[75%] opacity-70">
+<div class="bg-primary-container text-on-primary-container px-2 py-1 rounded-full text-[10px] font-bold shadow-sm">€185</div>
+</div>
+<div class="absolute top-[48%] left-[15%] opacity-70">
+<div class="bg-primary-container text-on-primary-container px-2 py-1 rounded-full text-[10px] font-bold shadow-sm">€340</div>
+</div>
+<div class="absolute top-[82%] left-[55%] opacity-70">
+<div class="bg-primary-container text-on-primary-container px-2 py-1 rounded-full text-[10px] font-bold shadow-sm">€275</div>
+</div>
+<div class="absolute top-[10%] left-[40%] opacity-70">
+<div class="bg-primary-container text-on-primary-container px-2 py-1 rounded-full text-[10px] font-bold shadow-sm">€520</div>
+</div>
+</div>
+<!-- Floating Map Controls -->
+<div class="absolute bottom-8 right-8 flex flex-col gap-3">
+<button class="w-12 h-12 bg-surface-container-lowest rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="w-12 h-12 bg-surface-container-lowest rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<button class="w-12 h-12 bg-surface-container-lowest rounded-full shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">my_location</span>
 </button>
 </div>
-</div>
-<div class="md:col-span-5 flex flex-col justify-center">
-<h3 class="font-headline text-2xl text-primary italic mb-6">The Curator's Perspective</h3>
-<p class="text-on-surface-variant leading-relaxed mb-8 font-light">
-                        "There’s a specific blue that only exists in Positano after the sun dips below the horizon. It’s the blue of slow dinners, chilled Vermentino, and the scent of lemon groves carried by the sea breeze."
-                    </p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full overflow-hidden">
-<img alt="" class="w-full h-full object-cover" data-alt="portrait of a stylish professional travel photographer woman smiling warmly in soft natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjLq-VlAEfbkYr8hPvdpQz_gO_cB3rNMa86H3WoyFrdkN4BykHDXBQuH67UiLq6PjafXCUNH3SivKs5CHoiaNtzIQzmEwezSWll9qJAb4ShTnLYJBu4MZBScRdOGf4iAC2QJJCB7qXKdnmU3ypZoDkcRUqpxT5oA7P9SYkGyTQOVQZRc6YSqhGl5e1F3DHS8dsYFwOClmpuAuHocmpzWuw8Ge7Q3qVLDF1-AtNl8k1ogC40Jtdrn3I7nApj9fGX9GJVMtjIfLiSCXS"/>
-</div>
-<div>
-<p class="font-label text-xs font-bold text-on-surface uppercase tracking-wider">Elena Rossi</p>
-<p class="font-label text-[10px] text-outline uppercase tracking-widest">Travel Editor</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Location Bento Grid -->
-<section class="mb-12">
-<div class="flex justify-between items-end mb-10">
-<div>
-<span class="font-label text-secondary uppercase tracking-[0.2em] text-[10px] mb-2 block">Curation</span>
-<h2 class="font-headline text-3xl italic text-primary">Hidden Gems &amp; Iconic Peaks</h2>
-</div>
-<button class="font-label text-[10px] uppercase tracking-widest text-primary border-b border-primary/20 pb-1 hover:border-primary transition-all">View all destinations</button>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Card 1 -->
-<div class="group cursor-pointer">
-<div class="relative overflow-hidden rounded-lg aspect-square mb-4">
-<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="serene balinese temple surrounded by lush tropical jungle and soft morning mist floating over water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaPq9jqkL3Q_w8ufFM0uKFYMB3iPPoAPTpVTm1sNllP8hsBzRDdTk3fuFA4SaAsAIQhr8CG-iHzlLlfzRi4dxVGDrHwRPVSY7AqVI-xUG-gMXSKm5mqWCdLJyaFH8Q0X7vAKlFaEiJVYshN5-AQLBYPEl5xng94WSe-SSiu__ozx47zUmT5-3urcZspQhnC5AMU_19ECcKhxUQuqJ-Lznrn840hAFYIgpJBfmi8cxFvdWaBFmIhhUV0BkiRClJYV892yi9ABI2dxSZ"/>
-<div class="absolute top-4 right-4 bg-surface/20 backdrop-blur-md rounded-full p-2 text-white">
-<span class="material-symbols-outlined text-sm" data-icon="favorite">favorite</span>
-</div>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h4 class="font-headline text-lg italic text-on-surface">Ubud Retreat</h4>
-<p class="text-outline text-sm">Bali, Indonesia</p>
-</div>
-<span class="font-label text-[10px] bg-surface-container text-on-surface-variant px-2 py-1 rounded tracking-tighter">BOUTIQUE</span>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="group cursor-pointer">
-<div class="relative overflow-hidden rounded-lg aspect-square mb-4">
-<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="traditional japanese architecture in Kyoto during sunset with glowing orange lights and cherry blossom trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd_CD_USkWKpp9kLuVSgo9YxA0z2ChjObrFSQHhj2w98ENGoI2vCU7sFaQgq935Zt0jMejAEab-wdsrNaDGNhdmYPLcA83EyNlxY3HavJ0xsiRWQbyL_ilT_YWksZWuKRpfV8O5GAsYvc54ninl4NCzRxN7k0wuQhiLvgZ3AsdMu98q2AD0Ww3E-vBA4kSq9md8ihYYC9J5CuxTl5MdOWD2xkEgQlVbpYtWUGtZmr_EN6m18wD2272naxYhfHFwGGf37pEeGoD28m7"/>
-<div class="absolute top-4 right-4 bg-surface/20 backdrop-blur-md rounded-full p-2 text-white">
-<span class="material-symbols-outlined text-sm" data-icon="favorite">favorite</span>
-</div>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h4 class="font-headline text-lg italic text-on-surface">Higashiyama Mornings</h4>
-<p class="text-outline text-sm">Kyoto, Japan</p>
-</div>
-<span class="font-label text-[10px] bg-surface-container text-on-surface-variant px-2 py-1 rounded tracking-tighter">CITY</span>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="group cursor-pointer">
-<div class="relative overflow-hidden rounded-lg aspect-square mb-4">
-<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="modern luxury chalet in the swiss alps with floor to ceiling glass windows overlooking snowy mountain peaks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzfMX9-bEtcdDRkr_oJextLvnbzeLDiUc_JwQ0ot820idVqvJHi5lM18HRhRqnrNk6YKwTiKqoMbOkam4bI_4EgFtDju0azO4tn6xw2ZBbiyn252-hl0r0jv3N8iHNs3AhW-xhGOSrLdL-_dIfFFwbLRSGiyMEfeli9J9C_zd4FFnY1ZDcgeJJ4hXsgojNIIbDU__jNNwQpQRo5ls2Ecwf6Q8p4d6r1zF2hoXYMCUyFsY3imQYb7zG6NqYvc9bkuoslxsBEre2LI5J"/>
-<div class="absolute top-4 right-4 bg-surface/20 backdrop-blur-md rounded-full p-2 text-white">
-<span class="material-symbols-outlined text-sm" data-icon="favorite">favorite</span>
-</div>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h4 class="font-headline text-lg italic text-on-surface">The Alpine Glasshouse</h4>
-<p class="text-outline text-sm">Zermatt, Switzerland</p>
-</div>
-<span class="font-label text-[10px] bg-surface-container text-on-surface-variant px-2 py-1 rounded tracking-tighter">LUXURY</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Newsletter / Editorial Callout -->
-<section class="mt-20 py-20 px-8 rounded-xl bg-surface-container text-center relative overflow-hidden">
-<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
-<span class="font-label text-secondary uppercase tracking-[0.3em] text-[10px] mb-4 block">The Weekly Dispatch</span>
-<h2 class="font-headline text-4xl italic text-primary mb-6 max-w-xl mx-auto">Travel stories for the intentional wanderer.</h2>
-<p class="text-on-surface-variant max-w-md mx-auto mb-10 leading-relaxed font-light">Join 50,000+ explorers receiving curated guides to the world's most evocative places.</p>
-<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
-<input class="w-full md:w-80 px-6 py-4 rounded-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary shadow-sm" placeholder="Enter your email" type="email"/>
-<button class="w-full md:w-auto px-8 py-4 bg-primary text-on-primary rounded-full font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-colors shadow-lg shadow-primary/20">Subscribe</button>
+<!-- Search Area Overlay -->
+<div class="absolute top-8 left-1/2 -translate-x-1/2 bg-surface-container-lowest/90 backdrop-blur-lg px-6 py-3 rounded-full shadow-2xl flex items-center gap-4 min-w-[320px] border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm font-body w-full" placeholder="Where to next?" type="text"/>
+<div class="h-6 w-px bg-outline-variant/30"></div>
+<button class="text-xs font-label uppercase tracking-widest font-bold text-secondary whitespace-nowrap">Map Filters</button>
 </div>
 </section>
 </main>
-<!-- BottomNavBar -->
-<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#fbf9f6]/80 dark:bg-stone-950/80 backdrop-blur-md z-50 rounded-t-3xl shadow-[0_-4px_24px_rgba(0,82,95,0.04)] tonal-layering-no-border">
-<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1.5 active:scale-90 transition-transform duration-150 hover:text-[#00525f] dark:hover:text-[#1a6b7a]" href="#">
-<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
-<span class="font-sans text-[11px] font-medium tracking-wide uppercase">Home</span>
-</a>
-<a class="flex flex-col items-center justify-center bg-[#1a6b7a] text-white rounded-full px-5 py-1.5 transition-all active:scale-90 duration-150" href="#">
-<span class="material-symbols-outlined mb-1" data-icon="search">search</span>
-<span class="font-sans text-[11px] font-medium tracking-wide uppercase text-white">Search</span>
-</a>
-<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1.5 active:scale-90 transition-transform duration-150 hover:text-[#00525f] dark:hover:text-[#1a6b7a]" href="#">
-<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
-<span class="font-sans text-[11px] font-medium tracking-wide uppercase">Map</span>
-</a>
-<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1.5 active:scale-90 transition-transform duration-150 hover:text-[#00525f] dark:hover:text-[#1a6b7a]" href="#">
-<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
-<span class="font-sans text-[11px] font-medium tracking-wide uppercase">Profile</span>
-</a>
-</nav>
+<!-- Footer - Hidden on split view to maximize map real estate, but required for identity -->
+<footer class="hidden">
+<div class="bg-[#eae8e5] dark:bg-slate-950 w-full py-16 px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+<div class="text-xl font-headline text-[#00525f] dark:text-teal-500">GoThereNow</div>
+<div class="text-slate-500 dark:text-slate-400 text-sm tracking-wide">© 2024 GoThereNow. Curated with intention.</div>
+<div class="flex gap-4">
+<a class="text-slate-500 hover:text-[#00525f] transition-colors underline-offset-4 hover:underline" href="#">Newsletter</a>
+<a class="text-slate-500 hover:text-[#00525f] transition-colors underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+</footer>
 </body></html>
