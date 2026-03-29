@@ -1,1 +1,294 @@
+<!DOCTYPE html>
 
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#ffffff",
+              "on-tertiary-container": "#c6e3f0",
+              "on-surface": "#1b1c1a",
+              "surface-tint": "#146776",
+              "surface-container-lowest": "#ffffff",
+              "inverse-primary": "#8bd1e2",
+              "surface-variant": "#e4e2df",
+              "on-secondary-container": "#78351e",
+              "error": "#ba1a1a",
+              "background": "#fbf9f6",
+              "outline-variant": "#bfc8cb",
+              "on-primary-fixed": "#001f25",
+              "inverse-surface": "#30312f",
+              "on-tertiary-fixed": "#001f29",
+              "on-secondary-fixed-variant": "#75331c",
+              "tertiary-fixed-dim": "#aecbd8",
+              "secondary-fixed": "#ffdbd0",
+              "primary-container": "#1a6b7a",
+              "outline": "#6f797b",
+              "on-secondary": "#ffffff",
+              "surface-container": "#efeeeb",
+              "surface-container-low": "#f5f3f0",
+              "primary-fixed-dim": "#8bd1e2",
+              "tertiary-fixed": "#cae7f4",
+              "surface-bright": "#fbf9f6",
+              "tertiary": "#334e59",
+              "on-primary-fixed-variant": "#004e5b",
+              "on-background": "#1b1c1a",
+              "on-secondary-fixed": "#390c00",
+              "on-primary-container": "#a2e9fa",
+              "secondary": "#934a31",
+              "on-tertiary-fixed-variant": "#2f4a55",
+              "surface-container-high": "#eae8e5",
+              "surface": "#fbf9f6",
+              "on-tertiary": "#ffffff",
+              "tertiary-container": "#4b6671",
+              "primary-fixed": "#a7eeff",
+              "error-container": "#ffdad6",
+              "secondary-container": "#fea182",
+              "surface-container-highest": "#e4e2df",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f2f0ed",
+              "primary": "#00525f",
+              "on-surface-variant": "#3f484b",
+              "surface-dim": "#dbdad7",
+              "secondary-fixed-dim": "#ffb59d",
+              "on-error-container": "#93000a"
+            },
+            fontFamily: {
+              "headline": ["Playfair Display", "serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px -20px rgba(0, 82, 95, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 backdrop-blur-md dark:bg-slate-900/80 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto w-full">
+<div class="text-2xl font-headline italic font-bold text-[#00525f] dark:text-teal-200">GoThereNow</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#00525f] hover:opacity-70 transition-all duration-300" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#00525f] hover:opacity-70 transition-all duration-300" href="#">Explore</a>
+<a class="text-[#00525f] dark:text-teal-400 font-bold border-b-2 border-[#934a31] pb-1 hover:opacity-70 transition-all duration-300" href="#">Creators</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#00525f] transition-all">Sign In</button>
+<button class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-medium active:scale-95 transform transition-transform shadow-lg shadow-primary/20">Join</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Profile Header Section -->
+<section class="max-w-7xl mx-auto px-12 mb-24">
+<div class="flex flex-col md:flex-row items-end gap-16">
+<div class="relative w-full md:w-1/3 aspect-[3/4] rounded-xl overflow-hidden editorial-shadow group">
+<img alt="Elena Rossi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sophisticated portrait of a woman with dark hair in an elegant linen outfit, soft natural lighting in a Mediterranean villa setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcg1KnKPmElGMfK68kkID43LH5VyTlEVykoGIzFT3tcqqETHHfYa9MYibVwjohRAY50w2l-XYS0_6if5yzS8sxNmAavyugc3YFvsfVjKdigCJ7kz9Z8vEDdIBCkMsabWKy3w33qJHYbNqpiYx0l1fXuulot0CRT_SN4L3s-wYiJLXrBuyeVUV2bwkdRzjbHOBr4QVtUToB0EL-X2L5yC9zW4K8hcUEZ8xZgEEz-imV1ecQ1hzISYp2tHB7XCGX9dbAo9E9n9XWIklb"/>
+</div>
+<div class="flex-1 pb-4">
+<div class="flex items-center gap-6 mb-6">
+<span class="label-md uppercase tracking-[0.2em] text-secondary font-bold">Verified Curator</span>
+<div class="h-[1px] flex-1 bg-outline-variant/30"></div>
+</div>
+<h1 class="text-7xl font-headline font-bold text-primary mb-6 tracking-tight">Elena Rossi</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-12 italic">
+                        "I believe travel is an art of intentionality. I seek out spaces that honor heritage while embracing the radical simplicity of modern design."
+                    </p>
+<div class="flex items-center gap-16 mb-12">
+<div class="flex flex-col">
+<span class="text-3xl font-headline font-bold text-primary">42</span>
+<span class="text-xs uppercase tracking-widest text-outline font-semibold">Picks</span>
+</div>
+<div class="flex flex-col">
+<span class="text-3xl font-headline font-bold text-primary">12.8k</span>
+<span class="text-xs uppercase tracking-widest text-outline font-semibold">Followers</span>
+</div>
+<div class="flex flex-col">
+<span class="text-3xl font-headline font-bold text-primary">314</span>
+<span class="text-xs uppercase tracking-widest text-outline font-semibold">Following</span>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-12 py-4 rounded-full font-bold text-lg active:scale-95 transition-all shadow-xl shadow-primary/20">
+                            Follow
+                        </button>
+<button class="bg-surface-container-lowest border border-outline-variant/20 px-6 py-4 rounded-full text-primary hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined align-middle">share</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Section Title -->
+<section class="max-w-7xl mx-auto px-12 mb-16">
+<div class="flex justify-between items-end border-b border-outline-variant/20 pb-8">
+<div>
+<span class="text-sm uppercase tracking-[0.3em] text-outline block mb-2 font-bold">The Collection</span>
+<h2 class="text-4xl font-headline font-bold text-primary">Recent Stays &amp; Picks</h2>
+</div>
+<div class="flex gap-4">
+<button class="p-3 rounded-full border border-outline-variant/30 text-primary hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Sophisticated Bento Grid / Editorial List -->
+<section class="max-w-7xl mx-auto px-12 space-y-32">
+<!-- Pick Item 1: Large Feature -->
+<div class="grid grid-cols-12 gap-8 items-center">
+<div class="col-span-12 md:col-span-7 relative z-10">
+<div class="aspect-[16/10] rounded-xl overflow-hidden editorial-shadow">
+<img alt="The Concrete Retreat" class="w-full h-full object-cover" data-alt="Minimalist brutalist concrete architecture hotel nestled in a lush green forest, dusk lighting with warm interior glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMXKbuzPSGfZjEVyxMKYtFNbmEBUAWkYu5kYO9JDyPwYsP6Hov9KBt-CHhNBkfqm2Vm65_CPwnKWSUtAKfGH3uRERzgt6GOHwq41PF5gMek-DS0Ck8MclVyQfdRdxnSQx_w8NYMWld7JWO4YE1BuIeDoI3V01OYfGkk6GGJqxMpGK1hekYjbsVkuXYDqZHtcqQt2ZSS0qWw6j0IoToe00P0-em_Z5V99Uv83kxgaG-PXlVROWiIebFo1hIn0glKAH-yKPdNLxXprM4"/>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 -ml-0 md:-ml-24 bg-surface-container-lowest p-12 md:p-16 rounded-xl editorial-shadow relative z-20">
+<span class="text-xs uppercase tracking-widest text-secondary font-bold mb-4 block">STAY — SWITZERLAND</span>
+<h3 class="text-4xl font-headline font-bold text-primary mb-6">The Concrete Retreat</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-8 italic font-serif">
+                        "The way the raw texture of the walls catches the morning light in Vals is something I haven't found anywhere else. It’s silence, rendered in stone."
+                    </p>
+<div class="flex items-center justify-between">
+<a class="inline-flex items-center gap-2 text-primary font-bold group" href="#">
+                            View Stay 
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<div class="flex gap-1 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pick Item 2: Asymmetric Layout -->
+<div class="grid grid-cols-12 gap-12 items-center">
+<div class="col-span-12 md:col-span-4 order-2 md:order-1">
+<span class="text-xs uppercase tracking-widest text-secondary font-bold mb-4 block">STAY — PUGLIA, ITALY</span>
+<h3 class="text-4xl font-headline font-bold text-primary mb-6">Masseria San Giovanni</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-8 italic font-serif">
+                        "Waking up to the scent of ancient olive groves and fresh sourdough. This isn't just a hotel; it's a sensory homecoming to the roots of the Mediterranean."
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group" href="#">
+                        View Stay 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="col-span-12 md:col-span-8 order-1 md:order-2 flex justify-end">
+<div class="w-full md:w-5/6 aspect-[4/3] rounded-xl overflow-hidden editorial-shadow relative">
+<img alt="Masseria San Giovanni" class="w-full h-full object-cover" data-alt="Traditional white stone Italian masseria courtyard with olive trees and sun-drenched stone walls under a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh9mr0sMHetWJvHqrqjgF5MJguasoPtEuLu4g0lZRAwPtFWv1d6gT5DAKrN6ucvWiyO5piCHHKGF-O15yYUV5UTEgDD0nmX6Obi_Va7-XpssX8_Wxz9W-Irmd5SLteoAI3zSB7htlSfP2XEPnLv8XgKk34iVsOJKnvkfEwKHT6cvdsBoG4TehVoSeHW0-mTD3XxWidEwV4Gs8KOQxKuWGuwAOHd-yAapdePV-jNDXpvPN-h6VfIbaG2TVkfiM8Jma1_0iWOtRMBy-s"/>
+<div class="absolute bottom-6 right-6 bg-white/20 backdrop-blur-md px-6 py-4 rounded-lg border border-white/30 text-white">
+<span class="block text-xs uppercase tracking-widest font-bold">Curator Favorite</span>
+<span class="text-sm italic">"The breakfast is legendary."</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pick Item 3: Secondary Feature -->
+<div class="grid grid-cols-12 gap-8 items-start">
+<div class="col-span-12 md:col-span-6">
+<div class="aspect-square rounded-xl overflow-hidden editorial-shadow mb-8">
+<img alt="Aman Kyoto" class="w-full h-full object-cover" data-alt="Modern Japanese garden architecture with wooden structures and mossy stones in a peaceful autumn forest setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-625VTCjPDeutiufZoipykdcLrvl5pt5Hf7NkZ2BciGsKs_55FMGDMLhih2OMVzMURFovEWe2l0Tfp0emUWo_N8CtUYrTBOYwIJDM4nVWcheDQFzU8Q-oDN4-dVhJA5OVhPW8m5bEbchnouVCQz7gtv53lPPXRvz6QPa9jIX18PzXT9hSs2Cm9f0UGZD9WA1dMy8kM98yCFKLB8YQ0eLcdLWPsk3hCnlVVSjNFGcGvsSI1RM4PDW7-23O2G4mKjHT3134-MwEuQ2v"/>
+</div>
+<span class="text-xs uppercase tracking-widest text-secondary font-bold mb-4 block">STAY — KYOTO</span>
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Aman Kyoto</h3>
+<p class="text-on-surface-variant leading-relaxed italic mb-6">"Forest bathing elevated to high art. The architecture disappears into the maples."</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group" href="#">
+                        View Stay 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform text-lg">arrow_forward</span>
+</a>
+</div>
+<div class="col-span-12 md:col-span-6 mt-0 md:mt-24">
+<div class="aspect-square rounded-xl overflow-hidden editorial-shadow mb-8">
+<img alt="Post Ranch Inn" class="w-full h-full object-cover" data-alt="Luxury cabin architecture perched on a coastal cliff overlooking the Pacific ocean with dramatic blue horizons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBILxXKkKM3AtFlIsvGcj59nZzRel82RI5arzS3ov9O7GBI8m7C-NAagIz20YISQXpOiXO6gmQyFr6p8Tn1IAx6ERnD4z1R0-T2LWFVo85vKb-ZCKJYAewxJCECL5Gh2htexuVqMucqDut-VTU_-AnbNH7M6leCYFzIgI6TIeBxZCqxi2GX5H1IiSh4_nJTaPoV9SsL953xmvdyge5UfmJqYLUScbIJaMsf84nSbXIYfgZeM1FFQkp7gy50EOv4VWpjJRDsIFuD485P"/>
+</div>
+<span class="text-xs uppercase tracking-widest text-secondary font-bold mb-4 block">STAY — BIG SUR</span>
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Post Ranch Inn</h3>
+<p class="text-on-surface-variant leading-relaxed italic mb-6">"Where the Pacific meets the redwoods. A sanctuary for the soul and the eyes."</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group" href="#">
+                        View Stay 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA Section -->
+<section class="max-w-7xl mx-auto px-12 mt-48">
+<div class="bg-primary-container rounded-xl p-16 md:p-24 text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6UcHk_9S5f4g1TCxgQi9PXlgA49TQQPRMiulR62mJD27giIzDl5sG3eTHXmDuW82VlaL1Kw5p11V8s7YYgIHmGHdOa5IyQSnU9COuLSsBicDTWY0Z3NSJD6Q1-ZI3gAuWlB6GJ5H-w0EoHeT6iN9uNz5syTroRWxsGdkZo62yEn-Kugy0MrBr4na21KYAvvKeaU9V1cnvx1RMScU14itUrKWHH9z7jfcVk1IF2mMio6aDt-5HiHSOaIpe9IFbxU4Y4Wml7IHLo7Tw');"></div>
+<div class="relative z-10">
+<span class="text-on-primary-container/80 uppercase tracking-[0.4em] font-bold text-sm block mb-6">Exclusive Content</span>
+<h2 class="text-5xl font-headline font-bold text-white mb-8 max-w-3xl mx-auto leading-tight">Follow Elena's hidden gems monthly.</h2>
+<p class="text-on-primary-container text-lg mb-12 max-w-xl mx-auto">Receive curated itineraries and private access to Elena's unpublished boutique hotel finds.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-1 px-8 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/60 focus:bg-white/20 focus:outline-none transition-all" placeholder="Your email address" type="email"/>
+<button class="bg-secondary text-on-primary px-10 py-4 rounded-full font-bold hover:bg-secondary-container transition-colors">Subscribe</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#eae8e5] dark:bg-slate-950 w-full py-16 px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-headline text-[#00525f] dark:text-teal-500 font-bold italic">GoThereNow</div>
+<p class="text-slate-500 dark:text-slate-400 font-sans text-sm tracking-wide max-w-xs">
+                    Curating the world's most intentional travel experiences for the discerning explorer.
+                </p>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<h4 class="text-[#00525f] dark:text-teal-400 font-bold text-xs uppercase tracking-widest">Company</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 font-sans text-sm hover:text-[#00525f] dark:hover:text-teal-300 underline-offset-4 hover:underline transition-colors duration-200" href="#">About Us</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 font-sans text-sm hover:text-[#00525f] dark:hover:text-teal-300 underline-offset-4 hover:underline transition-colors duration-200" href="#">Creators</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 font-sans text-sm hover:text-[#00525f] dark:hover:text-teal-300 underline-offset-4 hover:underline transition-colors duration-200" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-[#00525f] dark:text-teal-400 font-bold text-xs uppercase tracking-widest">Legal</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 font-sans text-sm hover:text-[#00525f] dark:hover:text-teal-300 underline-offset-4 hover:underline transition-colors duration-200" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 font-sans text-sm hover:text-[#00525f] dark:hover:text-teal-300 underline-offset-4 hover:underline transition-colors duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 font-sans text-sm hover:text-[#00525f] dark:hover:text-teal-300 underline-offset-4 hover:underline transition-colors duration-200" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="text-[#00525f] dark:text-teal-400 font-bold text-xs uppercase tracking-widest">Newsletter</h4>
+<p class="text-slate-500 dark:text-slate-400 font-sans text-sm">Get the weekly editorial delivered to your inbox.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-low border-none rounded-full px-4 py-2 text-sm w-full focus:ring-1 focus:ring-primary" placeholder="Email" type="text"/>
+<button class="bg-primary text-white px-4 py-2 rounded-full text-sm font-bold">Join</button>
+</div>
+<p class="text-slate-500 dark:text-slate-400 font-sans text-xs pt-4">© 2024 GoThereNow. Curated with intention.</p>
+</div>
+</div>
+</footer>
+</body></html>
