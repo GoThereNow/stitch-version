@@ -1,1 +1,327 @@
+<!DOCTYPE html>
 
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#004e5b",
+              "surface-variant": "#e4e2df",
+              "primary-container": "#1a6b7a",
+              "on-error": "#ffffff",
+              "tertiary-container": "#4b6671",
+              "error": "#ba1a1a",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "on-secondary-container": "#78351e",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed-variant": "#75331c",
+              "inverse-surface": "#30312f",
+              "on-tertiary-fixed-variant": "#2f4a55",
+              "tertiary": "#334e59",
+              "inverse-on-surface": "#f2f0ed",
+              "background": "#fbf9f6",
+              "on-primary-container": "#a2e9fa",
+              "on-secondary": "#ffffff",
+              "outline": "#6f797b",
+              "primary-fixed-dim": "#8bd1e2",
+              "outline-variant": "#bfc8cb",
+              "secondary": "#934a31",
+              "primary-fixed": "#a7eeff",
+              "on-secondary-fixed": "#390c00",
+              "on-background": "#1b1c1a",
+              "surface-tint": "#146776",
+              "secondary-container": "#fea182",
+              "surface-dim": "#dbdad7",
+              "surface-container": "#efeeeb",
+              "primary": "#00525f",
+              "on-tertiary-fixed": "#001f29",
+              "on-surface": "#1b1c1a",
+              "surface-container-low": "#f5f3f0",
+              "surface-container-highest": "#e4e2df",
+              "surface-bright": "#fbf9f6",
+              "tertiary-fixed": "#cae7f4",
+              "secondary-fixed": "#ffdbd0",
+              "on-surface-variant": "#3f484b",
+              "surface-container-high": "#eae8e5",
+              "inverse-primary": "#8bd1e2",
+              "secondary-fixed-dim": "#ffb59d",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#c6e3f0",
+              "surface": "#fbf9f6",
+              "tertiary-fixed-dim": "#aecbd8",
+              "on-primary-fixed": "#001f25"
+            },
+            fontFamily: {
+              "serif": ["Noto Serif"],
+              "sans": ["Plus Jakarta Sans"],
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #00525f 0%, #1a6b7a 100%);
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary/30">
+<!-- TopAppBar Shell -->
+<header class="bg-[#fbf9f6] sticky top-0 z-40 w-full">
+<div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/10">
+<img alt="Elena Vance" class="w-full h-full object-cover" data-alt="Close-up portrait of Elena Vance, a creative professional with a sophisticated and warm expression, soft natural studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBaOKqa1TVXbx1A5hv5iv-1w9rvPAVXCoslD0ztu9laHIM6sFkL2JSsZkbUrg5SsgnJXLrZqIQgCyLZry_sAOCiwkn9zWFPLyckdYKYqajwVmfGzUVjjaozCJcCw3pHya4vvRBvKhxv6SCOOfkhuewiq2IzFDcRtozgYt5Nb7pQGbkL_RPmGgmn_ZPLFnVTfBhtoiBEStZncyiIeQnyyQ6TySYiKDSDrxHxE-wzbr65YpV2fvkLyo0tLsuokWlttFkkoq5Ums0V4W5"/>
+</div>
+<div>
+<p class="font-sans text-xs uppercase tracking-widest text-on-surface-variant leading-none mb-1">Creator Studio</p>
+<h1 class="font-serif text-xl font-bold text-[#00525f]">Elena Vance</h1>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#eae8e5]/50 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[#00525f]">notifications</span>
+</button>
+</div>
+</header>
+<main class="pb-32">
+<!-- Hero Balance Section -->
+<section class="px-6 pt-8 pb-12">
+<div class="relative overflow-hidden editorial-gradient rounded-xl p-8 text-white shadow-xl">
+<div class="relative z-10">
+<span class="font-sans text-[10px] uppercase tracking-[0.2em] opacity-80 font-semibold">Total Balance</span>
+<h2 class="font-serif text-5xl mt-2 mb-6 tracking-tight">$1,245.50</h2>
+<div class="grid grid-cols-2 gap-4 border-t border-white/10 pt-6">
+<div>
+<p class="font-sans text-[10px] uppercase tracking-wider opacity-70">Available</p>
+<p class="text-xl font-medium">$890.00</p>
+</div>
+<div>
+<p class="font-sans text-[10px] uppercase tracking-wider opacity-70">Pending</p>
+<p class="text-xl font-medium">$355.50</p>
+</div>
+</div>
+<button class="mt-8 w-full bg-white text-primary font-bold py-4 rounded-full flex items-center justify-center gap-2 active:scale-[0.98] transition-all">
+                        Request Payout
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-white/5 rounded-full blur-3xl"></div>
+</div>
+</section>
+<!-- Earnings Over Time Chart -->
+<section class="px-6 mb-12">
+<div class="flex items-end justify-between mb-6">
+<div>
+<p class="font-sans text-xs uppercase tracking-widest text-secondary font-bold mb-1">Performance</p>
+<h3 class="font-serif text-2xl text-primary">Earnings Over Time</h3>
+</div>
+<div class="flex items-center gap-1 text-primary text-xs font-bold">
+                    Last 30 Days
+                    <span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+</div>
+<div class="flex gap-8 mb-4 border-b border-primary/5 pb-4">
+<div>
+<p class="font-sans text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Total Clicks</p>
+<p class="font-serif text-2xl text-primary">42,890</p>
+</div>
+<div>
+<p class="font-sans text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Conversion Rate</p>
+<p class="font-serif text-2xl text-secondary">2.9%</p>
+</div>
+</div><div class="bg-surface-container-low h-48 w-full rounded-xl flex items-end justify-between px-4 pb-4 gap-2">
+<!-- Simple stylized line chart bars to represent growth -->
+<div class="w-full bg-primary/10 rounded-t-lg h-[40%] transition-all hover:bg-primary/30"></div>
+<div class="w-full bg-primary/10 rounded-t-lg h-[35%] transition-all hover:bg-primary/30"></div>
+<div class="w-full bg-primary/10 rounded-t-lg h-[55%] transition-all hover:bg-primary/30"></div>
+<div class="w-full bg-primary/10 rounded-t-lg h-[45%] transition-all hover:bg-primary/30"></div>
+<div class="w-full bg-primary/10 rounded-t-lg h-[75%] transition-all hover:bg-primary/30"></div>
+<div class="w-full bg-primary/10 rounded-t-lg h-[65%] transition-all hover:bg-primary/30"></div>
+<div class="w-full bg-primary/10 rounded-t-lg h-[90%] transition-all hover:bg-primary/30"></div>
+<div class="w-full bg-primary/10 rounded-t-lg h-[80%] transition-all hover:bg-primary/30"></div>
+</div>
+<div class="flex justify-between mt-3 px-2">
+<span class="text-[10px] uppercase font-bold text-on-surface-variant opacity-50">01 May</span>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant opacity-50">15 May</span>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant opacity-50">30 May</span>
+</div>
+</section>
+<!-- Top Performing Stays -->
+<section class="mb-12">
+<div class="px-6 mb-6">
+<p class="font-sans text-xs uppercase tracking-widest text-secondary font-bold mb-1">Curation Analytics</p>
+<h3 class="font-serif text-2xl text-primary">Top Performing Stays</h3>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-6 px-6">
+<!-- Card 1 -->
+<div class="min-w-[280px] group">
+<div class="relative h-80 rounded-xl overflow-hidden mb-4">
+<img alt="Palazzo della Luce" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Majestic Italian villa exterior with stone arches and sun-drenched gardens, warm golden hour atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzv7i5vHnsJYa4-5LIHneLKe2CxTidZ_GrQupjHHnU3Gm0l3FcbYfFXtHbArjZQyb3oP4Iati2nFTvGw0L0albVVH6G6NDtduUNuOI9B_XDlKGPmtSnt_mBSIeRxSmIuGaPIeh42J8EntbVQW_hs_v3_GY4pNw6McGz2E1_hUJBqTtybjki5G2VqVeNAebyA3l_Azxd2eCr5IHo4rmLww6diIzwWa3pWnm7dnUkTxNonZ8150WMNvzjm7glSh48JVXtAWwdYPltYY8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<h4 class="font-serif text-xl">Palazzo della Luce</h4>
+<p class="font-sans text-xs opacity-80">Florence, Italy</p>
+</div>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-white uppercase tracking-tighter">
+                            Featured
+                        </div>
+</div>
+<div class="flex items-center justify-between px-1">
+<div>
+<p class="font-sans text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Conversion</p>
+<p class="text-xl font-bold text-primary">12.4%</p>
+</div>
+<div class="text-right">
+<p class="font-sans text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Earnings</p>
+<p class="text-lg font-medium text-secondary">$482.20</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="min-w-[280px] group">
+<div class="relative h-80 rounded-xl overflow-hidden mb-4">
+<img alt="Villa La Coste" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern minimalist architectural villa with large glass walls overlooking a lavender field in Provence, artistic editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd5In0BzvalTHQcXXYMkWUUvpo8u2PrgGmbMfS5LuAwlH_dZm2M543xhnl8N1sobhJhIqE0939yfv9O_xe9NR39RnnS1DoZ8wh_1Wln4M4tVuMpa13Eb9txYed0UtiunGNkCNF3nC-L0bPjhaSfen0MQdCqEX59XY4NMKPdhoPcjBL9sxp2IDaXEfbxo3AL9Bwy427wIZ1TGq85v-XSRP2A_cT17J2XRggStRXp_d65zGur6nVn0W_YPHADHDXQYbHdW-IPSaOUzkE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<h4 class="font-serif text-xl">Villa La Coste</h4>
+<p class="font-sans text-xs opacity-80">Provence, France</p>
+</div>
+</div>
+<div class="flex items-center justify-between px-1">
+<div>
+<p class="font-sans text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Conversion</p>
+<p class="text-xl font-bold text-primary">8.9%</p>
+</div>
+<div class="text-right">
+<p class="font-sans text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Earnings</p>
+<p class="text-lg font-medium text-secondary">$315.00</p>
+</div>
+</div>
+</div>
+</div>
+</section><!-- Referral & Tracking Section -->
+<section class="px-6 mb-12">
+<div class="mb-6">
+<p class="font-sans text-xs uppercase tracking-widest text-secondary font-bold mb-1">Growth Tools</p>
+<h3 class="font-serif text-2xl text-primary">Referral &amp; Tracking</h3>
+</div>
+<!-- Referral Link Box -->
+<div class="bg-primary/5 border border-primary/10 rounded-xl p-6 mb-8">
+<p class="font-sans text-[10px] uppercase tracking-widest text-primary font-bold mb-3">Your Personal Referral Link</p>
+<div class="flex items-center gap-3 bg-white p-3 rounded-lg border border-primary/5 shadow-sm">
+<code class="flex-1 font-sans text-sm text-on-surface-variant truncate">voyager.com/elena-vance?ref=studio</code>
+<button class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full text-xs font-bold active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+                Copy
+            </button>
+</div>
+<p class="text-[10px] text-on-surface-variant/60 mt-3">Earn 5% bonus on every stay booked through this link.</p>
+</div>
+<!-- Quick Links / Deep Link Generator -->
+<div>
+<div class="flex items-center justify-between mb-4">
+<h4 class="font-serif text-lg text-primary">Quick Tracking Links</h4>
+<button class="text-xs font-bold text-secondary flex items-center gap-1 uppercase tracking-widest">
+                Manage All <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">apartment</span>
+</div>
+<div>
+<p class="font-serif text-sm font-bold text-on-surface">Palazzo della Luce</p>
+<p class="font-sans text-[10px] text-on-surface-variant opacity-60 uppercase tracking-tight">Deep Link Active</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors">link</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">villa</span>
+</div>
+<div>
+<p class="font-serif text-sm font-bold text-on-surface">Villa La Coste</p>
+<p class="font-sans text-[10px] text-on-surface-variant opacity-60 uppercase tracking-tight">Deep Link Active</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary/40 group-hover:text-primary transition-colors">link</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Insights Bento -->
+<section class="px-6 grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-high p-6 rounded-xl col-span-2">
+<p class="font-sans text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-4">Content Reach</p>
+<div class="flex items-center justify-between">
+<h4 class="font-serif text-3xl text-primary">14.2k</h4>
+<span class="text-secondary font-bold flex items-center gap-1 text-sm">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                        24%
+                    </span>
+</div>
+<p class="text-xs text-on-surface-variant mt-2">New profile views this week</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl">
+<p class="font-sans text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2">Saved</p>
+<h4 class="font-serif text-2xl text-primary">842</h4>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl">
+<p class="font-sans text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2">Shares</p>
+<h4 class="font-serif text-2xl text-primary">156</h4>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#fbf9f6]/80 dark:bg-slate-900/80 backdrop-blur-md z-50 rounded-t-3xl shadow-[0_-4px_24px_rgba(0,82,95,0.04)]">
+<!-- Dashboard (Active) -->
+<a class="flex flex-col items-center justify-center bg-[#1a6b7a] text-white rounded-full px-5 py-2 active:scale-90 duration-200 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-sans text-[10px] font-medium mt-0.5">Dashboard</span>
+</a>
+<!-- Content -->
+<a class="flex flex-col items-center justify-center text-[#00525f]/60 px-5 py-2 hover:text-[#934a31] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="subscriptions">subscriptions</span>
+<span class="font-sans text-[10px] font-medium mt-0.5">Content</span>
+</a>
+<!-- Earnings -->
+<a class="flex flex-col items-center justify-center text-[#00525f]/60 px-5 py-2 hover:text-[#934a31] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-sans text-[10px] font-medium mt-0.5">Earnings</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-[#00525f]/60 px-5 py-2 hover:text-[#934a31] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+<span class="font-sans text-[10px] font-medium mt-0.5">Profile</span>
+</a>
+</nav>
+</body></html>
