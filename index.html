@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
+<html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -13,58 +15,58 @@
         theme: {
           extend: {
             colors: {
-              "primary-container": "#1a6b7a",
-              "surface": "#fbf9f6",
-              "on-secondary-fixed": "#390c00",
-              "surface-bright": "#fbf9f6",
-              "on-primary": "#ffffff",
-              "tertiary-container": "#4b6671",
-              "on-primary-container": "#a2e9fa",
-              "on-tertiary": "#ffffff",
-              "on-background": "#1b1c1a",
-              "primary-fixed": "#a7eeff",
-              "inverse-surface": "#30312f",
-              "tertiary": "#334e59",
-              "primary": "#00525f",
+              "on-error": "#ffffff",
+              "on-tertiary-container": "#c6e3f0",
+              "on-surface": "#1b1c1a",
+              "surface-tint": "#146776",
+              "surface-container-lowest": "#ffffff",
+              "inverse-primary": "#8bd1e2",
+              "surface-variant": "#e4e2df",
               "on-secondary-container": "#78351e",
-              "tertiary-fixed": "#cae7f4",
+              "error": "#ba1a1a",
+              "background": "#fbf9f6",
+              "outline-variant": "#bfc8cb",
+              "on-primary-fixed": "#001f25",
+              "inverse-surface": "#30312f",
+              "on-tertiary-fixed": "#001f29",
+              "on-secondary-fixed-variant": "#75331c",
+              "tertiary-fixed-dim": "#aecbd8",
               "secondary-fixed": "#ffdbd0",
+              "primary-container": "#1a6b7a",
+              "outline": "#6f797b",
+              "on-secondary": "#ffffff",
               "surface-container": "#efeeeb",
               "surface-container-low": "#f5f3f0",
-              "surface-container-highest": "#e4e2df",
-              "on-error-container": "#93000a",
-              "outline": "#6f797b",
-              "on-tertiary-fixed": "#001f29",
-              "secondary": "#934a31",
-              "on-secondary": "#ffffff",
-              "on-tertiary-container": "#c6e3f0",
               "primary-fixed-dim": "#8bd1e2",
-              "on-surface-variant": "#3f484b",
-              "surface-tint": "#146776",
-              "background": "#fbf9f6",
-              "surface-variant": "#e4e2df",
-              "on-surface": "#1b1c1a",
-              "outline-variant": "#bfc8cb",
-              "error": "#ba1a1a",
-              "on-error": "#ffffff",
-              "inverse-on-surface": "#f2f0ed",
-              "on-tertiary-fixed-variant": "#2f4a55",
+              "tertiary-fixed": "#cae7f4",
+              "surface-bright": "#fbf9f6",
+              "tertiary": "#334e59",
               "on-primary-fixed-variant": "#004e5b",
-              "on-secondary-fixed-variant": "#75331c",
-              "inverse-primary": "#8bd1e2",
+              "on-background": "#1b1c1a",
+              "on-secondary-fixed": "#390c00",
+              "on-primary-container": "#a2e9fa",
+              "secondary": "#934a31",
+              "on-tertiary-fixed-variant": "#2f4a55",
+              "surface-container-high": "#eae8e5",
+              "surface": "#fbf9f6",
+              "on-tertiary": "#ffffff",
+              "tertiary-container": "#4b6671",
+              "primary-fixed": "#a7eeff",
               "error-container": "#ffdad6",
-              "on-primary-fixed": "#001f25",
               "secondary-container": "#fea182",
+              "surface-container-highest": "#e4e2df",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f2f0ed",
+              "primary": "#00525f",
+              "on-surface-variant": "#3f484b",
               "surface-dim": "#dbdad7",
               "secondary-fixed-dim": "#ffb59d",
-              "tertiary-fixed-dim": "#aecbd8",
-              "surface-container-high": "#eae8e5",
-              "surface-container-lowest": "#ffffff"
+              "on-error-container": "#93000a"
             },
             fontFamily: {
-              "headline": ["Noto Serif"],
-              "body": ["Plus Jakarta Sans"],
-              "label": ["Plus Jakarta Sans"]
+              "headline": ["Playfair Display", "Noto Serif", "serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
             },
             borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
           },
@@ -72,244 +74,224 @@
       }
     </script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .editorial-shadow {
-            box-shadow: 0 4px 24px rgba(0, 82, 95, 0.04);
-        }
-        .glass-header {
-            background: rgba(251, 249, 246, 0.8);
-            backdrop-filter: blur(12px);
-        }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #fbf9f6;
+        color: #1b1c1a;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
-<!-- TopAppBar -->
-<header class="fixed top-0 left-0 w-full z-50 glass-header">
-<div class="flex justify-between items-center w-full px-6 py-4">
-<div class="flex items-center gap-4">
-<button class="text-[#00525f] dark:text-[#1a6b7a] hover:opacity-80 transition-opacity active:scale-95 duration-200 ease-in-out">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-</div>
-<h1 class="font-serif text-2xl italic tracking-tighter text-[#00525f] dark:text-[#1a6b7a]">GoThereNow.com</h1>
-<div class="flex items-center gap-4">
-<button class="text-[#00525f] dark:text-[#1a6b7a] hover:opacity-80 transition-opacity active:scale-95 duration-200 ease-in-out">
-<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
-</button>
+<body class="antialiased">
+<!-- TopNavBar Component -->
+<header class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 backdrop-blur-md shadow-sm">
+<nav class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto w-full">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-serif italic font-bold text-[#00525f] tracking-tight" href="#">gothernow.com</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#00525f] font-bold border-b-2 border-[#934a31] pb-1 transform transition-transform active:scale-95" href="#">Home</a>
+<a class="text-slate-600 font-medium hover:text-[#00525f] hover:opacity-70 transition-all duration-300 transform transition-transform active:scale-95" href="#">Explore</a>
+<a class="text-slate-600 font-medium hover:text-[#00525f] hover:opacity-70 transition-all duration-300 transform transition-transform active:scale-95" href="#">Creators</a>
 </div>
 </div>
+<div class="flex items-center gap-6">
+<button class="text-[#00525f] font-semibold hover:opacity-70 transition-all duration-300">Sign In</button>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-2.5 rounded-full font-semibold shadow-sm hover:opacity-90 active:scale-95 transition-all">Start Exploring</button>
+</div>
+</nav>
 </header>
-<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<main class="pt-24">
 <!-- Hero Section -->
-<section class="mb-16">
-<div class="relative w-full aspect-[4/5] md:aspect-[21/9] rounded-xl overflow-hidden mb-8 group">
-<img alt="Luxury boutique hotel interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic interior shot of a luxury mediterranean villa with sun-drenched arched windows and soft linen drapes at golden hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPaCh2GAnaBMEqefORmPvRcAyf0g0FtqCsUu_Yor3D6pUcEZyxCy6-OZHgnyPPBSvg8kGWrsch5u1NZxofT9lG_vmkmicb-B1Gl24VY6Iuz9h6FustCmobIEF7kfaarnyLrTth3hytfAZg6dt7dCkwmnF0P8hDwDi2YApb42f1Y5qJ3oYE8pGrsWjOiFvEtQa2qDk3UdH6yzP5kKflwsE7xdApIj-LEtkriU-ko_bIFcM4m15dPqZ3HELbNHVahezv1PSGgtgjHgMi"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent flex flex-col justify-end p-8 md:p-12">
-<p class="font-label text-white uppercase tracking-widest text-[10px] mb-2">Curated Experience</p>
-<h2 class="font-headline text-4xl md:text-6xl text-white italic tracking-tight leading-tight max-w-2xl">Live on GoThereNow.com.<br/>Stay where creators stay.</h2>
+<section class="relative px-6 md:px-12 py-12 max-w-screen-2xl mx-auto">
+<div class="relative h-[819px] w-full rounded-xl overflow-hidden group">
+<img alt="Coastal retreat with turquoise water" class="w-full h-full object-cover transition-all duration-700 group-hover:brightness-110" data-alt="Stunning aerial view of a luxury minimalist villa built into a rocky cliffside overlooking crystal clear turquoise Mediterranean waters at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7-AJYQyac4CWu4xIX30U42vFHzeOfy0RlhTwiw8PnEs2UyiAJUuh9oC19bMeS1_Z5b_B1WUC3eXMK6nwKLmPPWomh-QBrwruU6FewFK-_06MJt259eZFQcyIW6yvAm7O7Vr7KpfvttetHGcnbZjAZBesIdV8oG2D57PpYtGFjkhbw__mtrSkkaCPCVnYTTf_Bj5-6OifsY21CUtuVrZ_BVOKWXZCAnoVPLK9k0MxIIFsaehRnnHfWiLfw5s5_q40FIbxeSe4YfMpM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-16 left-12 max-w-2xl">
+<span class="label-md uppercase tracking-[0.2em] text-white/80 font-semibold mb-4 block">Destination: Amalfi</span>
+<h1 class="text-6xl md:text-8xl font-headline text-white leading-[1.1] mb-8">Stay where creators stay.</h1>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-2 hover:opacity-90 transition-all shadow-xl px-10">
+                            View Collections
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
 </div>
-</div>
-<!-- Quick Search Bar -->
-<div class="relative -mt-16 mx-auto max-w-3xl z-10">
-<div class="bg-surface-container-lowest rounded-full editorial-shadow p-2 flex items-center">
-<div class="flex-1 flex items-center px-6 gap-3 border-r border-outline-variant/20">
-<span class="material-symbols-outlined text-primary" data-icon="explore">explore</span>
-<input class="bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-outline w-full text-sm" placeholder="Explore GoThereNow.com..." type="text"/>
-</div>
-<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-full px-8 py-3 font-medium transition-all active:scale-95">
-                        Search
-                    </button>
 </div>
 </div>
 </section>
-<!-- Trending Now Section -->
-<section class="mb-20">
-<div class="flex justify-between items-end mb-8">
+<!-- Editor's Choice Section -->
+<section class="py-24 px-12 max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-16">
 <div>
-<span class="font-label uppercase tracking-widest text-[10px] text-secondary font-bold">Trending Now</span>
-<h3 class="font-headline text-3xl italic tracking-tight mt-1">The Editor's Choice</h3>
+<span class="label-md uppercase tracking-[0.2em] text-secondary font-bold mb-2 block">The Shortlist</span>
+<h2 class="text-5xl font-headline text-on-background">Editor’s Choice</h2>
 </div>
-<button class="text-primary font-medium text-sm flex items-center gap-1 hover:gap-2 transition-all">
-                    View Portfolio <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
-</button>
+<a class="text-primary font-bold flex items-center gap-2 border-b border-primary/20 pb-1 hover:border-primary transition-all" href="#">
+                    See all recommendations <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
 </div>
-<!-- Asymmetric Bento Grid for Hotels -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-<!-- Large Card -->
-<div class="md:col-span-7 group cursor-pointer">
-<div class="relative aspect-square md:aspect-[4/3] rounded-lg overflow-hidden mb-4 bg-surface-container">
-<img alt="Modern minimalist hotel in Kyoto" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Minimalist architectural exterior of a modern ryokan in Kyoto with dark wood slats and lush bamboo garden in soft morning mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_XMggsGRmJb1rALN_J1la1gnclJg30Onfa9QzoLDa5rQvz3Rs6WT-Fz5aF9b012ugkfmsAzgSXyfqWfuekB1HZOu23NSpm07pkUv9WriGJNf-dpgZcSOJXHOvqfzS7n2909n_qSSiE9mJ78atfja7yIW4ne_Dl8GPp34aMrBSr6nw8xoNr94yfvDUsajCSnncya3QQ_4vaJ_RLoVorzfOSQJLfQWiePNp62DkL482f6re26_phNEhQSmU5q_GRHPgIFndWqNy1wCc"/>
-<div class="absolute top-4 right-4 bg-surface-container-lowest/20 backdrop-blur-md rounded-full p-2 text-white">
-<span class="material-symbols-outlined text-xl" data-icon="bookmark">bookmark</span>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-12 gap-8">
+<!-- Large Featured Card -->
+<div class="col-span-12 md:col-span-7 group cursor-pointer">
+<div class="relative aspect-[4/3] rounded-lg overflow-hidden mb-6 bg-surface-container-low">
+<img alt="Luxury desert oasis" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant boutique hotel pool in the Moroccan desert with terracotta walls, lush palm trees, and warm lanterns at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASgmRbel1lOWkUFsqYBeABFJ4nG5q0b98BjjdHVJ4xfNUBijz817E0L-YwHzXRn_2-tHR5qyBR0Kqymb4T_4m3WqVtALIAZUiRDUPgQFdvGOawzVUbZ63EkUjl34Vp3TgxirqXVFZ_hdVKACV8937rynJJWX-6bomdTAD-7XwzjCMecwznh_CReN3rmyfVFTxW9-OvwmFAD8Nh0NCvdHXIoKsqvSrd7ELB-GqDMxLugACmZjYWcByn6ePbLnlozWMY5fF7uffsRq8f"/>
+<div class="absolute top-6 left-6 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/30">
+<span class="text-white text-sm font-medium">Recommended by @elisa_travels</span>
 </div>
 </div>
 <div class="flex justify-between items-start">
 <div>
-<h4 class="font-headline text-2xl italic">The Sora Residence</h4>
-<p class="text-on-surface-variant text-sm flex items-center gap-1">
-<span class="material-symbols-outlined text-xs" data-icon="location_on">location_on</span> Kyoto, Japan
-                            </p>
+<p class="text-sm font-label uppercase tracking-wider text-on-surface-variant mb-2">Marrakesh, Morocco</p>
+<h3 class="text-3xl font-headline mb-3">La Mamounia Sanctuary</h3>
+<p class="text-on-surface-variant max-w-md">An escape into the heart of the Medina, where traditional craftsmanship meets contemporary stillness.</p>
 </div>
-<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full">
-<div class="w-6 h-6 rounded-full overflow-hidden">
-<img alt="Creator Avatar" data-alt="Portrait of a young creative woman with a friendly smile and stylish glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu4-OwXSzDEizwxVyBgtij-lK4yOwQb6yhZy5KMuAMXyzNCj8YjkngOPvZ7BWXdmpqSijpNiCOLw0wyl907WxKA29h_owrn1CGOygBCgB6gKAM6G0ItnYycht70_iNHuz3eFK9ukrYl4YQmmwzlDRdkdIWsPkr_A3rs5ysWFAh5Nfi2QyQMWY5wnpBUb8Jr2uwJgsOJ-dt_h2znW-VQium0XXGKvTGbKGR1Pkuep_7vrCXufenkImKhofod-HqFTfW-6OTosoYi4Ro"/>
-</div>
-<span class="text-[10px] font-label uppercase tracking-wider text-primary font-bold">Maya K.</span>
+<div class="text-right">
+<span class="text-2xl font-headline text-primary">$840</span>
+<span class="text-sm text-on-surface-variant block">per night</span>
 </div>
 </div>
 </div>
-<!-- Column of Smaller Cards -->
-<div class="md:col-span-5 flex flex-col gap-8">
-<div class="flex gap-4 group cursor-pointer">
-<div class="w-32 h-40 rounded-lg overflow-hidden shrink-0">
-<img alt="Beachfront villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Whitewashed luxury villa overlooking the azure waters of the Amalfi Coast with pink bougainvillea in the foreground" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjf2PGOUm36QuPjdDhHU9StkXks_IbtpPE-pfHWLBQ_9o4tmjLG_k2VwzRcxb37gxk10FbyAp8Rp85F0OX-aBr7N5DYiFSv6IlXj6Yc1b3HQoVmc06jmlVxZW9pVvq5lwx3UJtrYzvlNCohhqzmsB8QP0ntw4i6B2esNTJHSBgT6lgLqq5sqw_s8zHiooZ9yzKSMC9FRVCHZ4DNAOQDSuyMMBEFv6SMNBYR4VtypAuSMz0nWj4E9dVNs1LxfdIe1ljkOKsXYURkwTu"/>
+<!-- Column Cards -->
+<div class="col-span-12 md:col-span-5 flex flex-col gap-8">
+<div class="group cursor-pointer">
+<div class="relative aspect-[16/9] rounded-lg overflow-hidden mb-4 bg-surface-container-low">
+<img alt="Modernist cabin in the woods" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sleek glass and black timber cabin nestled in a snowy pine forest in Norway during the blue hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRbYxjUOE7uJ9uToXDVO8ozh4SEuDFMUW3jbm2NBk5s9AVmjyWn3_fYfxAV4l7kaglCubvSylBC2VfK8QhQKC7vB4r9ZeHaZ_kLivXL_JiFk3fsxuJeJ68YrwxF84vZOe0S1_Z5r9qlIUU6PK72Vq_0p0e2d53rtpsF_Szcv-mSyVgvoXauXNTj3NFmYmGZ0wo3mN1K7XcIe9fkYrcDjMmhkcSSbHuY9qlN9LivQOG8_-f6rmuOBbwy2S_W5L2el9RJyrKdzqWj4-8"/>
 </div>
-<div class="flex flex-col justify-center">
-<span class="text-secondary font-bold text-[9px] uppercase tracking-widest mb-1">Recommended</span>
-<h4 class="font-headline text-xl italic mb-1">Casa Orizon</h4>
-<p class="text-on-surface-variant text-xs mb-3">Amalfi, Italy</p>
-<div class="flex items-center gap-2">
-<div class="w-5 h-5 rounded-full overflow-hidden">
-<img alt="Avatar" data-alt="Professional photographer portrait with outdoor natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGIJ5xg0ToujOyyDII3Ghe6aah2a3R5wcPb27XTpu1toQy1bGr1vZuD41zctk_0bwc2H1ZZ3ubvAcWNM34zh-BxOhhH_d5qYSO6_4aLSovaSG0J88682s0gOnZkbRRDg1QfN4LDIhmK1VF-fXrfmm6_lMG_iuAP9lUiY8TgjSp13pWBm0Z7dXiS8W-XaCY450SGcLZBnlW3zbdMxO0faIp3JvfQSgCww-ohCnKBcVQgFr-F4GUKOmxfq2I7L-dEWLeT7_BqYLORoI8"/>
+<div class="flex justify-between items-center">
+<div>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Lofoten, Norway</p>
+<h4 class="text-xl font-headline">The Nordic Glass House</h4>
 </div>
-<span class="text-[9px] font-label tracking-tighter text-outline">By Julian V.</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </div>
 </div>
+<div class="group cursor-pointer">
+<div class="relative aspect-[16/9] rounded-lg overflow-hidden mb-4 bg-surface-container-low">
+<img alt="Beachfront bungalow" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist bamboo bungalow on a white sand beach in Tulum, Mexico with swaying palms and organic textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUIpj1ywtgWXuFBWklUUtvKxkVVsRFawQX36XlmRAUrRHnjDOkbbeN6L6xHlhtaOekHDbKBMKSxZMjClB30HQWdI5A9IN7HcPdnAgUhdQUFBFNt76_cfP1ywugGX3wuQ7lfjzXUWFQdQAXBwGc3Q2kIN17CsVwg_aBbOW44olZQ79qzH2lWUJKbOkLXSLN1_MGYNdKyk250uZEBks4R43t8oI6gY85SDv7_yx8OsWrPj1V8W5FNCaktcJLyH2iKOw-cTWc7v5qsLEe"/>
 </div>
-<div class="flex gap-4 group cursor-pointer">
-<div class="w-32 h-40 rounded-lg overflow-hidden shrink-0">
-<img alt="Modern desert stay" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Brutalist concrete architecture in the middle of a Joshua Tree desert landscape at dusk with glowing warm interior lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgm_6lgUopw02C3nCF7iu2NyXxUnXdSgqbEDNvervcbNL8PD_zOBo2SvBgDfdK1f_FZqK73humuUSuVT3hAFzNS9PqplytQXuALQVy53AVm9_EjSoCsqSljbQARphTWE1uw_JxWkTgQxKjlb_WSfvMaWDoUT3a7ON3Ctyv3WhBxJD4leUCEXK4xGAW9jbWC4VBa8CAbsOwBPKn0yo4qS4bZbMqagv3DVR3mOe5D4lo4kgE8hcD8w2nS0ykJMlEXTDJlnBJLPscDZNS"/>
+<div class="flex justify-between items-center">
+<div>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Tulum, Mexico</p>
+<h4 class="text-xl font-headline">Azulik Moon Villa</h4>
 </div>
-<div class="flex flex-col justify-center">
-<span class="text-secondary font-bold text-[9px] uppercase tracking-widest mb-1">Secret Gem</span>
-<h4 class="font-headline text-xl italic mb-1">Desert Monolith</h4>
-<p class="text-on-surface-variant text-xs mb-3">Joshua Tree, USA</p>
-<div class="flex items-center gap-2">
-<div class="w-5 h-5 rounded-full overflow-hidden">
-<img alt="Avatar" data-alt="Portrait of an explorer with a rugged and thoughtful expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaBHWhsuC17rFg14xfCDTUA-lZuOgWzj6prejBdHaHcBk7n-7DEAQ7EqOFgAuykNOh-SIc8mx7WKnir8kaW7v1QSA06XKQX2b888914q-1DQT6Ps-Y_8hvDauM4nDHm_Ujk4jn5SD3_I41XBBPhrqEDYRFiFsURnuw4uIgQfwEUfEYr-nzKx1ifv_es1QVRDnS4UH1bVni-RHQm92ABU-S6gU8KbEZYSjfhEe6lB2lo1bdlJov5NGQ9iorQIOSmuYn9HhFngusR7jM"/>
-</div>
-<span class="text-[9px] font-label tracking-tighter text-outline">By Elias Thorne</span>
-</div>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- Meet the Creators Section -->
-<section class="mb-20 bg-surface-container-low rounded-xl p-12 overflow-hidden relative">
-<div class="absolute -right-20 -top-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
-<div class="relative z-10 text-center mb-12">
-<span class="font-label uppercase tracking-widest text-[10px] text-secondary font-bold">Community</span>
-<h3 class="font-headline text-3xl italic tracking-tight mt-1">Meet the Creators</h3>
-<p class="text-on-surface-variant max-w-lg mx-auto mt-4 text-sm">Discover travel through the eyes of photographers, designers, and explorers who redefine luxury.</p>
+<section class="bg-surface-container-high py-24 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="text-center mb-16">
+<span class="label-md uppercase tracking-[0.2em] text-secondary font-bold mb-2 block">The Curators</span>
+<h2 class="text-5xl font-headline text-on-background">Meet the Creators</h2>
 </div>
-<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 relative z-10">
-<!-- Creator 1 -->
-<div class="flex flex-col items-center group cursor-pointer">
-<div class="w-20 h-20 rounded-full p-1 border-2 border-primary-container/20 group-hover:border-primary transition-colors mb-3">
-<img alt="Creator" class="w-full h-full object-cover rounded-full" data-alt="Fashionable young woman with editorial makeup and a confident pose" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpuTo0--t5Zt4nJWpihXP-kwX_mxfeod3vG5Eh1YYtjZmZu3Y_MeKhiCEz9B3ewhGtsu1nqOgBKhlQyS0BjrNMTAQ-WMMC3BeOb_7kAsRz0zMJWjz4zHFN9ByrFsWTX-S3NF15C1DAiE3_yPIle0FNGEdtd9zm_4Ype7kPIlP4-_4IrI0jCT4PI2dLfRyNxJ1BYe9DDL2mnDWY2kGZTAySsKbHk57COqxOmmIf-nJQav05Qm-XM4flAaSxBmhHf9S5qExS2hpqDe4Y"/>
+<div class="flex flex-wrap justify-center gap-12 md:gap-20">
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-32 h-32 md:w-44 md:h-44 rounded-full overflow-hidden mb-6 p-1 border-2 border-primary/20 group-hover:border-primary transition-all">
+<img alt="Profile" class="w-full h-full object-cover rounded-full" data-alt="Professional portrait of a young woman with a warm smile, natural lighting, wearing a minimalist linen shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmcZjxPrhzRLigaw0bFIiLyrxUz1NrpCJ9HgKDBDs1LEi2NJ67BqQoZCUvuHiqqQ3tkecO6eRbYSLbCqw67ViR6QRuZaIei5NOrXL2Kf4IKXgEk_LmID-XKLYVkuUDMH5U1G9LKHsk1t3KfMdkH8FaKTDSAYoLMuYfK5MUhJK3hPFhoO5FtV5T5R_s9WZrIGNQ5rm-jHpJKNLPUoAkUO5CDUaXnNhWMLwN8fPH7Ub3ue4-xiUlMEIxuYxbd5MW23OKwYl7khv14Uba"/>
 </div>
-<p class="font-medium text-xs">Elena S.</p>
-<p class="text-[9px] text-outline uppercase tracking-tighter">Fashion Editor</p>
+<h4 class="text-xl font-headline">Elena Vasquez</h4>
+<p class="text-sm text-on-surface-variant tracking-wide font-medium">Design &amp; Architecture</p>
 </div>
-<!-- Creator 2 -->
-<div class="flex flex-col items-center group cursor-pointer">
-<div class="w-20 h-20 rounded-full p-1 border-2 border-primary-container/20 group-hover:border-primary transition-colors mb-3">
-<img alt="Creator" class="w-full h-full object-cover rounded-full" data-alt="Portrait of a male architect with a clean minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhCMbC5DAU3XRTztPyClJmVCF3yb_6PIdME3E4R21_zR4__4P-0KuqzvBc63IpQtzravqhyGBinFH9IjYoS6vY_PgoDryodn5WW5EQzjs4EKn0FWGGW48tzYioLwOpBb8KVkbag0Oo-I7BS8PGoukljlS6kzoPMvn3JTU_LOhbvGAGQl-qIJsbcxB7ZtAG7CNJa8itTFVAjxIBSlzW7h9mQyk7RnDeEMEMTI58-EdDAVj4J0LAaSE1OEjEz_4QBzOIx8CZsRVDNtYu"/>
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-32 h-32 md:w-44 md:h-44 rounded-full overflow-hidden mb-6 p-1 border-2 border-primary/20 group-hover:border-primary transition-all">
+<img alt="Profile" class="w-full h-full object-cover rounded-full" data-alt="Close up of a man with a beard and glasses in a soft-focus outdoor setting, wearing a stylish fedora" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRhxCr0eRGYC49NnKHmrQhIUtMbSweb8Rr_XbhGi5cJ4Qla0ahYAjBfIAO6qTgjSV5CxZi6jyI7N2PbAPkhFoP71DUywZsBdgcWmEiDc3B4QRC12rKlG9iibK9ZyEANwN5HJ3ZWCCy-ndol3PwIDkpjKuf-lc5torSGuMb2bve8kGh3LiDU4ovv_5-p1PDGSlsotmi5Cb7BofrvqdgjpemISf0ivmlTvYRbcD3tJulp1HlK5boosl8vooxtSYXDIc0AWlNJAle0Sc2"/>
 </div>
-<p class="font-medium text-xs">Marco Rossi</p>
-<p class="text-[9px] text-outline uppercase tracking-tighter">Architect</p>
+<h4 class="text-xl font-headline">Julian Thorne</h4>
+<p class="text-sm text-on-surface-variant tracking-wide font-medium">Adventure Explorer</p>
 </div>
-<!-- Creator 3 -->
-<div class="flex flex-col items-center group cursor-pointer">
-<div class="w-20 h-20 rounded-full p-1 border-2 border-primary-container/20 group-hover:border-primary transition-colors mb-3">
-<img alt="Creator" class="w-full h-full object-cover rounded-full" data-alt="Candid portrait of a young woman traveler in a natural setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpxFRrQnbzvLlF4n3z4PpXj6oBKT-dm-1xR3XXTjW-oL-AlDyO-RjPuY1FZig-pn3zgXPkci2X4ag6Sd1DgjKp_UUWnAuvg-F5r3oGt2eAqeGDmz3AHtb_Dxp2a989NWcotXZ4SvhJbNufsK6pr3toUvd4r8hTCXNHhcw1a_bSaPmfStsLcM90iFpAv5weF96OVbtF4W12247eBkLv5_6mnCCWBwoL0ncHOW6BoM2gR5XznK93gJzYcoHSvPLFvEAx1fx_izstTFnP"/>
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-32 h-32 md:w-44 md:h-44 rounded-full overflow-hidden mb-6 p-1 border-2 border-primary/20 group-hover:border-primary transition-all">
+<img alt="Profile" class="w-full h-full object-cover rounded-full" data-alt="Editorial portrait of a woman with vibrant hair and creative makeup looking thoughtfully at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiWvV64AklIN5vH5mCHGPk1BBa9QoXWbFtPt4OQh42wBt3Zx7tg-mad32HMDShlFNhfvrQcikcWUf1BS9YblmBa9qK912C_d7mUrjPUmkSl-kWInFhi279ZwLSM3UYtHcB4fMDr3N8Z_BseOIojB1WEUkAhTeCZTw8DlkW5tE_VqnNr7ppW7Cti524BHdOkbBL_75ZwsOjC240exlwP_aX69YDRC1yxEQFXJFTH-rLgXj0krub0TI_ZjbNU8lfcY9U2uvP-XlvwKW6"/>
 </div>
-<p class="font-medium text-xs">Sasha V.</p>
-<p class="text-[9px] text-outline uppercase tracking-tighter">Lifestyle</p>
+<h4 class="text-xl font-headline">Maya Chen</h4>
+<p class="text-sm text-on-surface-variant tracking-wide font-medium">Urban Hidden Gems</p>
 </div>
-<!-- Creator 4 -->
-<div class="flex flex-col items-center group cursor-pointer">
-<div class="w-20 h-20 rounded-full p-1 border-2 border-primary-container/20 group-hover:border-primary transition-colors mb-3">
-<img alt="Creator" class="w-full h-full object-cover rounded-full" data-alt="Portrait of a young tech entrepreneur with a warm smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl6jA65MhClvQ5yN7-LjcHXJbGrLHaiCG98kaFXJL8XtJXW1c5QLK9UnVZJEJIXnwZaHgbcf8oN-NLv-VFGXn66EfRG6ic4qQ-dMzd76sViVdZrAlARaYcrRJY06NDFVXvH9aW5wEvRVQGHzrZooSIzWmMdBFKQqGs8BaVeSV2XhVa8G0BduiNrvABp6XLvpWHIHZAL-TcZ4i8ySwzo0ne7qXMPKWuGXaZNupo4aypQkirGnL_qS9Oq-PcZXUYF6y02-Hogyi9MzRl"/>
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-32 h-32 md:w-44 md:h-44 rounded-full overflow-hidden mb-6 p-1 border-2 border-primary/20 group-hover:border-primary transition-all">
+<img alt="Profile" class="w-full h-full object-cover rounded-full" data-alt="A man with a kind face and salt-and-pepper hair, wearing a high-end trench coat in a European city setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0vq7FTGaKaiEdrsDepuxZ19OdtIyr32SlGsrfvtMbNcI9CO1WZi73x9q_hDrsyAK4khH9UyTT2bZwQE4jF8rNG7NojjjIOTulzm4bFq2u2Tjh5x8--0HL2Hr5xRDD3STAVmYLblKB5M-Nfmgc1TQSWcNoHnFaCP6jEyhWJjfXn7G2ycNXLpbLAO7FmM9GnBbkaM07z2ceayerilu4r5P9pyGSk4iph-91ZcYAxwMUNIYMIfj1j6PahmuJn2Q7n4x5WmoVJgWj3Bpx"/>
 </div>
-<p class="font-medium text-xs">David Chen</p>
-<p class="text-[9px] text-outline uppercase tracking-tighter">Tech Nomad</p>
+<h4 class="text-xl font-headline">Marcus Berg</h4>
+<p class="text-sm text-on-surface-variant tracking-wide font-medium">Slow Living Travel</p>
 </div>
-<!-- Creator 5 -->
-<div class="flex flex-col items-center group cursor-pointer">
-<div class="w-20 h-20 rounded-full p-1 border-2 border-primary-container/20 group-hover:border-primary transition-colors mb-3">
-<img alt="Creator" class="w-full h-full object-cover rounded-full" data-alt="Portrait of a ceramic artist in her sunlit studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWMoCSL28dk2zBwhrA-lFbPQRkWHxh9Krxy298TO4MtVngDF-Og0GKCXtXc_XtA7B7paBB_FxcOn2Q9zvdzB99ldGyPupzrRSLazR5Upv0RuM4L7-glvHvbIsMEPgpEA3H8cwiKzpFj3Z-jU-Ybg-zig3ShQHIBfvvIUAs_DTWMhXAv2zysloOeUBXooGQKJmeO-kEFOlmXM4B97N0xg8YgmzkgOnOKEPn2V5NwKHbSP87OLZ0P-aw0GP1kBEKLrT4Q-Gwn7TjGWCA"/>
-</div>
-<p class="font-medium text-xs">Anya L.</p>
-<p class="text-[9px] text-outline uppercase tracking-tighter">Artist</p>
-</div>
-<!-- Creator 6 -->
-<div class="flex flex-col items-center group cursor-pointer">
-<div class="w-20 h-20 rounded-full p-1 border-2 border-primary-container/20 group-hover:border-primary transition-colors mb-3">
-<img alt="Creator" class="w-full h-full object-cover rounded-full" data-alt="Travel filmmaker with a weathered, adventurous look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCka3OBA-032uIifrx5xh8uaIBpuw1XXzEGXMl-SuhXMaKOngtoufEJTViIy2-di4dAOEOY6dXKj0fzPg4YGe2fOSVzwMpJ0mzik7fwLLI8Fxd_PRsymNRjyO5TDAKkLwkO_hsPQGfwZPPFHa8j0FKc5Ti18M1Vs2Nogd2OK4TIexFkxualK4qq-mbfYOR3_ngNS409Rc_QlyORwrhgPbRsZkekMx9irsKM9BtQe-0x3mRCHRhsSalw_xfFVi0_RYS1jXjJjgpEdQhz"/>
-</div>
-<p class="font-medium text-xs">Tom Hardy</p>
-<p class="text-[9px] text-outline uppercase tracking-tighter">Filmmaker</p>
 </div>
 </div>
 </section>
-<!-- Featured Collections (Card Row) -->
-<section class="mb-12">
-<h3 class="font-headline text-2xl italic mb-6">Curated Stories</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="group relative overflow-hidden rounded-lg aspect-[3/4]">
-<img alt="Mountain retreat" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" data-alt="Deep green pine forest in the Swiss Alps with light morning fog drifting between the trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlF8kbOFnu0mKlpujnUmcdiko0uJau6fTCEa-szAQnyjtWVegV1nI2kHzuHS-k5NkOWhkROqu2rNPi3Ux5gdIS4JUIka6nNsTSLcf3JVQ8qETzF06lgWK6C0oa8NIANDS-MpzgEswNHWIHjsNVmlnfs0PSHGCQ1daMqKzGMrE4F_PkJ0Q_LvmI3gQ5hE4fz-vVChf3fEegFXeK_MRSyqEXTDxTCijoOO7nKERe1-vgufZ5X1ZnA1-oI4SLDKdhqGzT_aiPzkCEHxWu"/>
-<div class="absolute inset-0 bg-black/30 p-6 flex flex-col justify-end">
-<h4 class="text-white font-headline text-xl italic">The Alpine Guide</h4>
-<p class="text-white/80 text-[10px] uppercase tracking-widest mt-2">12 Properties</p>
+<!-- Curated Stories Section -->
+<section class="py-32 px-12 max-w-screen-2xl mx-auto">
+<div class="text-center mb-20">
+<span class="label-md uppercase tracking-[0.2em] text-secondary font-bold mb-2 block">Journal</span>
+<h2 class="text-6xl font-headline text-on-background">Curated Stories</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<!-- Story Card 1 -->
+<div class="relative group cursor-pointer overflow-hidden rounded-xl h-[600px]">
+<img alt="Alpine landscape" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Dramatic jagged mountain peaks in the Alps reflected in a perfectly still mirror-like lake at dawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpTXIk5pFFBGlsZkimfo6emlMvAF5_nojnpYACf_KdE80uDZ5nsquxzIPllHaGzMpj3p9fpbkEcHq2qS846GFHmJwT-_rZyu7LiL5-BPAqOoyiPF_Xp8vvlCF7O2eLiPXWys9dOphZjak5DIOpSIwRpbHxCQwQ4AL2N6U7bvd4j25fMGPct09VSOaeLcjjonnjOAfz8DIJxFHAhf-ehdDeHW_KIoYSlzTNko-Jtj90sIyf2t_o76X3Xa9AkxGfiO6llyuBUzkcHATj"/>
+<div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-x-0 bottom-0 p-12 text-white">
+<span class="label-md uppercase tracking-[0.2em] text-white/70 mb-4 block">The Alpine Guide</span>
+<h3 class="text-5xl font-headline mb-6 leading-tight">Finding solitude in the high peaks of Valais.</h3>
+<p class="text-lg text-white/80 max-w-md mb-8">A curated collection of remote mountain retreats that offer complete digital detox.</p>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-3 rounded-full hover:bg-white hover:text-primary transition-all">Read Story</button>
 </div>
 </div>
-<div class="group relative overflow-hidden rounded-lg aspect-[3/4]">
-<img alt="Paris city street" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" data-alt="Charming Parisian street corner with classic haussmann architecture and a small street cafe at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI4AVS6qGr1yYms3OjpLerQ49Ca4b2VxBr_HsGoC0YUxgiO2hOXitnpB3oF2c0z8mwPs7lEIfTBzuaoWybjBxcmfR_RryxCq6-TOqyK0V6XGoQs-9CE1iGsfhu2Z6LRjsgwNn61_gBbT_t8OINn74S_LrrXzUmiiUsA5ihji6krAbXcWH0A-XiAX3TceeCTDc3w7Rms6McXYax3AGVOy1hS2TPWMN_PWIT0Fqq2PEH3wTYQ4FGoGkdqGI_BbrndNNxjRUYqeOr11Zl"/>
-<div class="absolute inset-0 bg-black/30 p-6 flex flex-col justify-end">
-<h4 class="text-white font-headline text-xl italic">City Insider: Paris</h4>
-<p class="text-white/80 text-[10px] uppercase tracking-widest mt-2">8 Properties</p>
+<!-- Story Card 2 -->
+<div class="relative group cursor-pointer overflow-hidden rounded-xl h-[600px]">
+<img alt="Parisian street" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Golden morning light hitting a classic Parisian street with beautiful Haussmann architecture and empty cafes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCelJWK_S7gRKsHJxTUoHL7bP_2NRcemqyTaGSYnE9fdSotqZMz2pC36MFD9zlqoIN14RNsJbqV9pnxPMcd6oVfCYhXl7devwLxVInGib6xrgRX8PdeOmIy_sy0vvN4wycsukjAQRzI-NclTRSalt8mPSVZ2mochyEC6pX6md2bJl_kPPkmFUhESBULbKSj_DQZ7dNu3TzaqkAD_9qhlPTrqzO7YzCXRr3DH6WaiZjKyddNKhru5z0PiEX4VLbWd-PPl04L1hvNv2ur"/>
+<div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-x-0 bottom-0 p-12 text-white">
+<span class="label-md uppercase tracking-[0.2em] text-white/70 mb-4 block">Oasis Escapes</span>
+<h3 class="text-5xl font-headline mb-6 leading-tight">The hidden inner courtyards of historical Paris.</h3>
+<p class="text-lg text-white/80 max-w-md mb-8">Explore the private gardens and boutique hotels tucked behind the Haussmann facades.</p>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-3 rounded-full hover:bg-white hover:text-primary transition-all">Read Story</button>
 </div>
 </div>
-<div class="group relative overflow-hidden rounded-lg aspect-[3/4]">
-<img alt="Desert resort" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" data-alt="Luxury pool in a desert oasis with palm trees reflecting in the calm turquoise water at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkQNIbVkew0NFq10R8GkbyE0rh3WECPPyuRWQwPU9CuCeIK8EIslXWEqfDCh9gnhp31lfLBXoAm3ySgF6U5QPH7e1fw21N0356JaptW1CWw71P6hJp1jeXwHeXnODR9N4YXSoM-p5GTm4Zp8hdO5S2CO6ZC8YxQaBWBQ-777jnjOQ0N10k2Qd4dQ8VGvZyqekjQGc3idv9svLmgnglL75kXukpR5u4nejFBxnO8IBO3lYupghW8n1A1z6U94aCSyPCMq_5_GPW0-Sr"/>
-<div class="absolute inset-0 bg-black/30 p-6 flex flex-col justify-end">
-<h4 class="text-white font-headline text-xl italic">Oasis Escapes</h4>
-<p class="text-white/80 text-[10px] uppercase tracking-widest mt-2">15 Properties</p>
 </div>
+</section>
+<!-- Newsletter Section (Editorial style) -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-4xl font-headline mb-8">Get the curator’s eye in your inbox.</h2>
+<p class="text-on-surface-variant text-lg mb-12">Weekly dispatches of rare finds, hidden stays, and architectural gems from our global creator network.</p>
+<div class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow bg-surface-container-lowest px-6 py-4 rounded-full border-none focus:ring-1 focus:ring-primary outline-none" placeholder="Your email address" type="email"/>
+<button class="bg-secondary text-white px-8 py-4 rounded-full font-bold hover:opacity-90 transition-all">Subscribe</button>
 </div>
 </div>
 </section>
 </main>
-<!-- BottomNavBar -->
-<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#fbf9f6]/80 dark:bg-stone-950/80 backdrop-blur-md z-50 rounded-t-3xl shadow-[0_-4px_24px_rgba(0,82,95,0.04)]">
-<!-- Home (Active) -->
-<a class="flex flex-col items-center justify-center bg-[#1a6b7a] text-white rounded-full px-5 py-1.5 transition-all active:scale-90 duration-150" href="#">
-<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
-<span class="font-sans text-[11px] font-medium tracking-wide uppercase mt-0.5">Home</span>
-</a>
-<!-- Search -->
-<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1.5 hover:text-[#00525f] dark:hover:text-[#1a6b7a] active:scale-90 transition-transform duration-150" href="#">
-<span class="material-symbols-outlined" data-icon="search">search</span>
-<span class="font-sans text-[11px] font-medium tracking-wide uppercase mt-0.5">Search</span>
-</a>
-<!-- Map -->
-<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1.5 hover:text-[#00525f] dark:hover:text-[#1a6b7a] active:scale-90 transition-transform duration-150" href="#">
-<span class="material-symbols-outlined" data-icon="explore">explore</span>
-<span class="font-sans text-[11px] font-medium tracking-wide uppercase mt-0.5">Map</span>
-</a>
-<!-- Profile -->
-<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1.5 hover:text-[#00525f] dark:hover:text-[#1a6b7a] active:scale-90 transition-transform duration-150" href="#">
-<span class="material-symbols-outlined" data-icon="person">person</span>
-<span class="font-sans text-[11px] font-medium tracking-wide uppercase mt-0.5">Profile</span>
-</a>
-</nav>
+<!-- Footer Component -->
+<footer class="bg-[#eae8e5] w-full py-16 px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<a class="text-xl font-serif text-[#00525f] italic font-bold" href="#">gothernow.com</a>
+<p class="text-slate-500 font-sans text-sm leading-relaxed max-w-xs">
+                    Curated with intention. We discover the world's most inspiring stays through the lens of those who live for the journey.
+                </p>
+<div class="flex gap-4">
+<a class="text-[#00525f] hover:opacity-70 transition-all" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-[#00525f] hover:opacity-70 transition-all" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="text-[#00525f] hover:opacity-70 transition-all" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-[#00525f] font-bold text-sm tracking-widest uppercase">Platform</h4>
+<a class="text-slate-500 hover:text-[#00525f] underline-offset-4 hover:underline transition-colors duration-200" href="#">About Us</a>
+<a class="text-slate-500 hover:text-[#00525f] underline-offset-4 hover:underline transition-colors duration-200" href="#">Creators</a>
+<a class="text-slate-500 hover:text-[#00525f] underline-offset-4 hover:underline transition-colors duration-200" href="#">Collections</a>
+<a class="text-slate-500 hover:text-[#00525f] underline-offset-4 hover:underline transition-colors duration-200" href="#">Newsletter</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-[#00525f] font-bold text-sm tracking-widest uppercase">Legal</h4>
+<a class="text-slate-500 hover:text-[#00525f] underline-offset-4 hover:underline transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-[#00525f] underline-offset-4 hover:underline transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#00525f] underline-offset-4 hover:underline transition-colors duration-200" href="#">Cookie Settings</a>
+<p class="mt-8 text-slate-500 font-sans text-sm tracking-wide">© 2024 gothernow.com. Curated with intention.</p>
+</div>
+</div>
+</footer>
 </body></html>
