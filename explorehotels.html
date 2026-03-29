@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#1a6b7a",
+              "surface": "#fbf9f6",
+              "on-secondary-fixed": "#390c00",
+              "surface-bright": "#fbf9f6",
+              "on-primary": "#ffffff",
+              "tertiary-container": "#4b6671",
+              "on-primary-container": "#a2e9fa",
+              "on-tertiary": "#ffffff",
+              "on-background": "#1b1c1a",
+              "primary-fixed": "#a7eeff",
+              "inverse-surface": "#30312f",
+              "tertiary": "#334e59",
+              "primary": "#00525f",
+              "on-secondary-container": "#78351e",
+              "tertiary-fixed": "#cae7f4",
+              "secondary-fixed": "#ffdbd0",
+              "surface-container": "#efeeeb",
+              "surface-container-low": "#f5f3f0",
+              "surface-container-highest": "#e4e2df",
+              "on-error-container": "#93000a",
+              "outline": "#6f797b",
+              "on-tertiary-fixed": "#001f29",
+              "secondary": "#934a31",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#c6e3f0",
+              "primary-fixed-dim": "#8bd1e2",
+              "on-surface-variant": "#3f484b",
+              "surface-tint": "#146776",
+              "background": "#fbf9f6",
+              "surface-variant": "#e4e2df",
+              "on-surface": "#1b1c1a",
+              "outline-variant": "#bfc8cb",
+              "error": "#ba1a1a",
+              "on-error": "#ffffff",
+              "inverse-on-surface": "#f2f0ed",
+              "on-tertiary-fixed-variant": "#2f4a55",
+              "on-primary-fixed-variant": "#004e5b",
+              "on-secondary-fixed-variant": "#75331c",
+              "inverse-primary": "#8bd1e2",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#001f25",
+              "secondary-container": "#fea182",
+              "surface-dim": "#dbdad7",
+              "secondary-fixed-dim": "#ffb59d",
+              "tertiary-fixed-dim": "#aecbd8",
+              "surface-container-high": "#eae8e5",
+              "surface-container-lowest": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            shadow-[0_4px_24px_rgba(0,82,95,0.04)];
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="bg-[#fbf9f6] dark:bg-stone-950 flex justify-between items-center w-full px-6 py-4 docked full-width top-0 z-50 sticky">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#00525f] dark:text-[#1a6b7a] cursor-pointer hover:opacity-80 transition-opacity" data-icon="menu">menu</span>
+<h1 class="font-serif text-2xl italic tracking-tighter text-[#00525f] dark:text-[#1a6b7a]">GoThereNow</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex gap-6 items-center">
+<a class="text-stone-500 dark:text-stone-400 font-sans uppercase tracking-widest text-[10px] hover:opacity-80 transition-opacity" href="#">Home</a>
+<a class="text-[#00525f] dark:text-[#1a6b7a] font-semibold font-sans uppercase tracking-widest text-[10px]" href="#">Search</a>
+<a class="text-stone-500 dark:text-stone-400 font-sans uppercase tracking-widest text-[10px] hover:opacity-80 transition-opacity" href="#">Map</a>
+<a class="text-stone-500 dark:text-stone-400 font-sans uppercase merchant tracking-widest text-[10px] hover:opacity-80 transition-opacity" href="#">Profile</a>
+</nav>
+</div>
+<span class="material-symbols-outlined text-[#00525f] dark:text-[#1a6b7a] cursor-pointer hover:opacity-80 transition-opacity" data-icon="notifications">notifications</span>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-8 pb-32">
+<!-- Search Section -->
+<section class="mb-12">
+<div class="relative max-w-2xl">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
+<input class="w-full pl-12 pr-6 py-4 rounded-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface placeholder:text-outline/60" placeholder="Search destinations, creators, or hidden gems..." type="text"/>
+</div>
+</section>
+<!-- Category Filters -->
+<section class="mb-16 overflow-x-auto no-scrollbar">
+<div class="flex gap-3 pb-2">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label text-sm whitespace-nowrap active:scale-95 transition-transform">All Stories</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95">Boutique</button>
+<button class="px-6 py-2 rounded-full bg-secondary text-on-secondary font-label text-sm whitespace-nowrap active:scale-95 transition-transform shadow-lg shadow-secondary/20">Luxury</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95">Beach</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95">City</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95">Nordic</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95">Desert</button>
+</div>
+</section>
+<!-- Featured Editorial Section (Asymmetric) -->
+<section class="mb-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-7 group relative overflow-hidden rounded-xl aspect-[4/5] md:aspect-[16/10]">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="dramatic wide shot of the amalfi coast cliffside village at twilight with sparkling lights reflecting in the mediterranean sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWuEe_mO7uIgioxr4ezrj-YEtD_r3goFnKn0u9pvij9Tq3DdXpRUbDsXF4CdvVw8hegGo0c79Puf2avGYNNLZk0NOoc6L_z4lQDwdqRPz9h9dRD9ks3RwOIJrRh_rnrujhcOJNYuiHy__yzVGMfZETfzGrWXB6Y2SqmoLIW_Plqzx03ycJ8bX2aH75a6ZHr1fOHued9EVP1qT6k_sv62I53xbe--HhwIpVYI1ZRWHhAZAZMoTAgp5EQSQqcFBtWMdf7oqoQPFzzhYd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<span class="font-label text-white/80 uppercase tracking-widest text-[10px] mb-2 block">Featured Destination</span>
+<h2 class="font-headline text-4xl text-white italic mb-4 leading-tight">Postcards from the <br/>Amalfi Coast</h2>
+<button class="flex items-center gap-2 text-white font-label text-xs uppercase tracking-widest hover:gap-4 transition-all group/btn">
+                            Read the Story 
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col justify-center">
+<h3 class="font-headline text-2xl text-primary italic mb-6">The Curator's Perspective</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8 font-light">
+                        "There’s a specific blue that only exists in Positano after the sun dips below the horizon. It’s the blue of slow dinners, chilled Vermentino, and the scent of lemon groves carried by the sea breeze."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img alt="" class="w-full h-full object-cover" data-alt="portrait of a stylish professional travel photographer woman smiling warmly in soft natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjLq-VlAEfbkYr8hPvdpQz_gO_cB3rNMa86H3WoyFrdkN4BykHDXBQuH67UiLq6PjafXCUNH3SivKs5CHoiaNtzIQzmEwezSWll9qJAb4ShTnLYJBu4MZBScRdOGf4iAC2QJJCB7qXKdnmU3ypZoDkcRUqpxT5oA7P9SYkGyTQOVQZRc6YSqhGl5e1F3DHS8dsYFwOClmpuAuHocmpzWuw8Ge7Q3qVLDF1-AtNl8k1ogC40Jtdrn3I7nApj9fGX9GJVMtjIfLiSCXS"/>
+</div>
+<div>
+<p class="font-label text-xs font-bold text-on-surface uppercase tracking-wider">Elena Rossi</p>
+<p class="font-label text-[10px] text-outline uppercase tracking-widest">Travel Editor</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Bento Grid -->
+<section class="mb-12">
+<div class="flex justify-between items-end mb-10">
+<div>
+<span class="font-label text-secondary uppercase tracking-[0.2em] text-[10px] mb-2 block">Curation</span>
+<h2 class="font-headline text-3xl italic text-primary">Hidden Gems &amp; Iconic Peaks</h2>
+</div>
+<button class="font-label text-[10px] uppercase tracking-widest text-primary border-b border-primary/20 pb-1 hover:border-primary transition-all">View all destinations</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-lg aspect-square mb-4">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="serene balinese temple surrounded by lush tropical jungle and soft morning mist floating over water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaPq9jqkL3Q_w8ufFM0uKFYMB3iPPoAPTpVTm1sNllP8hsBzRDdTk3fuFA4SaAsAIQhr8CG-iHzlLlfzRi4dxVGDrHwRPVSY7AqVI-xUG-gMXSKm5mqWCdLJyaFH8Q0X7vAKlFaEiJVYshN5-AQLBYPEl5xng94WSe-SSiu__ozx47zUmT5-3urcZspQhnC5AMU_19ECcKhxUQuqJ-Lznrn840hAFYIgpJBfmi8cxFvdWaBFmIhhUV0BkiRClJYV892yi9ABI2dxSZ"/>
+<div class="absolute top-4 right-4 bg-surface/20 backdrop-blur-md rounded-full p-2 text-white">
+<span class="material-symbols-outlined text-sm" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-lg italic text-on-surface">Ubud Retreat</h4>
+<p class="text-outline text-sm">Bali, Indonesia</p>
+</div>
+<span class="font-label text-[10px] bg-surface-container text-on-surface-variant px-2 py-1 rounded tracking-tighter">BOUTIQUE</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-lg aspect-square mb-4">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="traditional japanese architecture in Kyoto during sunset with glowing orange lights and cherry blossom trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd_CD_USkWKpp9kLuVSgo9YxA0z2ChjObrFSQHhj2w98ENGoI2vCU7sFaQgq935Zt0jMejAEab-wdsrNaDGNhdmYPLcA83EyNlxY3HavJ0xsiRWQbyL_ilT_YWksZWuKRpfV8O5GAsYvc54ninl4NCzRxN7k0wuQhiLvgZ3AsdMu98q2AD0Ww3E-vBA4kSq9md8ihYYC9J5CuxTl5MdOWD2xkEgQlVbpYtWUGtZmr_EN6m18wD2272naxYhfHFwGGf37pEeGoD28m7"/>
+<div class="absolute top-4 right-4 bg-surface/20 backdrop-blur-md rounded-full p-2 text-white">
+<span class="material-symbols-outlined text-sm" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-lg italic text-on-surface">Higashiyama Mornings</h4>
+<p class="text-outline text-sm">Kyoto, Japan</p>
+</div>
+<span class="font-label text-[10px] bg-surface-container text-on-surface-variant px-2 py-1 rounded tracking-tighter">CITY</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-lg aspect-square mb-4">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="modern luxury chalet in the swiss alps with floor to ceiling glass windows overlooking snowy mountain peaks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzfMX9-bEtcdDRkr_oJextLvnbzeLDiUc_JwQ0ot820idVqvJHi5lM18HRhRqnrNk6YKwTiKqoMbOkam4bI_4EgFtDju0azO4tn6xw2ZBbiyn252-hl0r0jv3N8iHNs3AhW-xhGOSrLdL-_dIfFFwbLRSGiyMEfeli9J9C_zd4FFnY1ZDcgeJJ4hXsgojNIIbDU__jNNwQpQRo5ls2Ecwf6Q8p4d6r1zF2hoXYMCUyFsY3imQYb7zG6NqYvc9bkuoslxsBEre2LI5J"/>
+<div class="absolute top-4 right-4 bg-surface/20 backdrop-blur-md rounded-full p-2 text-white">
+<span class="material-symbols-outlined text-sm" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-lg italic text-on-surface">The Alpine Glasshouse</h4>
+<p class="text-outline text-sm">Zermatt, Switzerland</p>
+</div>
+<span class="font-label text-[10px] bg-surface-container text-on-surface-variant px-2 py-1 rounded tracking-tighter">LUXURY</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Editorial Callout -->
+<section class="mt-20 py-20 px-8 rounded-xl bg-surface-container text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+<span class="font-label text-secondary uppercase tracking-[0.3em] text-[10px] mb-4 block">The Weekly Dispatch</span>
+<h2 class="font-headline text-4xl italic text-primary mb-6 max-w-xl mx-auto">Travel stories for the intentional wanderer.</h2>
+<p class="text-on-surface-variant max-w-md mx-auto mb-10 leading-relaxed font-light">Join 50,000+ explorers receiving curated guides to the world's most evocative places.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<input class="w-full md:w-80 px-6 py-4 rounded-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary shadow-sm" placeholder="Enter your email" type="email"/>
+<button class="w-full md:w-auto px-8 py-4 bg-primary text-on-primary rounded-full font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-colors shadow-lg shadow-primary/20">Subscribe</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#fbf9f6]/80 dark:bg-stone-950/80 backdrop-blur-md z-50 rounded-t-3xl shadow-[0_-4px_24px_rgba(0,82,95,0.04)] tonal-layering-no-border">
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1.5 active:scale-90 transition-transform duration-150 hover:text-[#00525f] dark:hover:text-[#1a6b7a]" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-sans text-[11px] font-medium tracking-wide uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#1a6b7a] text-white rounded-full px-5 py-1.5 transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="search">search</span>
+<span class="font-sans text-[11px] font-medium tracking-wide uppercase text-white">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1.5 active:scale-90 transition-transform duration-150 hover:text-[#00525f] dark:hover:text-[#1a6b7a]" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-sans text-[11px] font-medium tracking-wide uppercase">Map</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1.5 active:scale-90 transition-transform duration-150 hover:text-[#00525f] dark:hover:text-[#1a6b7a]" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-sans text-[11px] font-medium tracking-wide uppercase">Profile</span>
+</a>
+</nav>
+</body></html>
